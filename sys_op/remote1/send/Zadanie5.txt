@@ -1,0 +1,30 @@
+@echo off
+cls
+
+set parametr1=
+set parametr2=
+
+if "%parametr1%"=="" goto brak
+if not "%parametr2%"=="" goto duzo
+
+for %%x in (-a -b -c) do if "%parametr1%"=="%%x" goto dobrze
+goto koniec
+
+:dobrze 
+echo Parametr %parametr1% jest poprawny!
+pause 
+goto koniec
+
+:brak
+echo Nie podano parametru!
+echo Podaj jeszcze raz!
+pause 
+goto koniec
+
+:duzo
+echo Podano za duzo argumentow!
+echo Dopuszczalan ilosc parametrow to jeden!
+pause 
+goto koniec
+
+:koniec

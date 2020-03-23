@@ -1,0 +1,9 @@
+@echo off
+
+rem sprawdzic czy dziala
+if "%2"=="" goto error
+if exist "%2" mkdir "%2"
+copy *."%1" "%2"
+exit
+:error
+echo "zbyt malo argumentow"
