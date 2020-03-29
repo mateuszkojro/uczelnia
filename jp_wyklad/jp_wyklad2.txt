@@ -1,0 +1,13 @@
+1.	Klasa jest schematem na podstawie którego tworzone są obiekty - instancje klasy
+
+2.	Pole statyczne jest dzielone pomiedzy instancjami klasy
+
+3.	Konstruktor wykonywany jest podczas tworzenia obiektu
+
+4.
+a)	Konstuktor kopiujacy wywolywany jest gdy tworzymy nowy obiekt na podstawie istniejacego 
+
+b)	osoba(osoba& other){
+	this->nazwisko = new char[strlen(other.nazwisko)+1];
+	strcpy(nazwisko,other.nazwisko)
+}
