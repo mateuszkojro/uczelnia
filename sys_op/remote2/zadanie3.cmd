@@ -2,6 +2,7 @@
 
 if exist %1 goto blad 
 mkdir %1
+cd %1
 echo %PATH% > %2
 exit
 :blad 
