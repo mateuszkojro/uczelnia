@@ -9,21 +9,17 @@ int main(){
     const int size = 5;
 
     int tab[size] = {7,2,3,4,5};
-for(int i = 0 ; i < size;i++)
-printf("[%d]",tab[i]);
 
+    for(int i = 0 ; i < size;i++)printf("[%d]",tab[i]);
+    printf("\n %d porownan \n",insert_sort(tab,size));
+    for(int i = 0 ; i < size;i++)printf("[%d]",tab[i]);
     printf("\n");
-    printf("%d porownan \n",insert_sort(tab,size));
-
-for(int i = 0 ; i < size;i++)
-    printf("[%d]",tab[i]);
-
     return 0;
 }
 
 int insert_sort(int *tab, int size){
     int comp = 0;
-    int j = size - 1;
+    int j = size - 2;
     while (j >= 1){
      comp++;
      int x = tab[j];
