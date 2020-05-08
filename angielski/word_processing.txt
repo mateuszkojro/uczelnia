@@ -1,0 +1,82 @@
+Zadnie 1
+1.Menu bar, formating toolbar 
+2.Typeface ,
+3.Bold, Italic
+4.Increase Indent, 
+5.Header, Footer
+
+Zadanie 2
+1.First
+2.Then 
+3.Is that rihght?
+4.Now
+5.Right
+6.Click the right mouse button
+7.After that
+8.Done it
+9.right
+
+Zadanie 3
+1.select
+2.drag
+3.click
+4.position
+5.click
+6.right click
+
+Zadanie 4
+To insert a photo from web to your web document you need to open your web browser, then in an adress bar write "www.google.com" then search for a picture you want then right click on it and select copy option now you can navigate to the place in your text document where you want to put ypur picture and once again press right mouse button and click paste.
+
+pkt I 
+1.help
+2.both
+3.produce
+4.including
+5.both
+6.addition
+
+pkt II
+1.
+pkt III
+1.e
+2.f
+3.g
+4.a
+5.c
+6.d
+7.h
+8.b
+
+Zadanie 5
+1.cut and paste
+2.find and replace
+3.word wrapping
+4.print
+5.font specifications
+6.graphics
+7.headers footers and page numbering
+8.layout
+9.merge
+10.spell checker
+11.thesaurus
+
+Zadanie 6
+pt I
+1.Word processor
+2.menu bar
+3.font
+4.header
+5.footer
+6.layout
+7.merge
+
+pt II
+
+1.typface, size, style
+2.find and replace
+3.spelling, 
+4.synonyms
+5.toolbar
+6.indenting
+
+
