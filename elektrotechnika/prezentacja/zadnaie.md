@@ -1,5 +1,8 @@
 # Tematy do porusznia 
 ## 20-30 slajdów
+
+---
+
 # Tranzystor bipolarny
 
 * budowa - sklada sie z 3 warstw polprzewodnika o roznym typie przewodnictwa w dwoch mozeliwych ułozeniach pnp i npn poszczegolne warstwy nosza nazwy
@@ -9,7 +12,7 @@
 	2. baza (B) warstw slabo domieszkowana i cieńsza
 	3. kolektor (C)
 
-* zasada działania -  
+* zasada działania - 
 
 # Wzmacniacze tranzystorowe (podstawy budowy) w układzie
 
@@ -33,6 +36,8 @@
 * układ odwracający
 * układ nieodwracający.
 * Porównanie parametrów (oporność wejściowa, wzmocnienie) i zastosowań
+
+---
 
 # źródła
 
