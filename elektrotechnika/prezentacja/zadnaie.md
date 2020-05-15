@@ -1,15 +1,15 @@
-# Tematy do porusznia 
+# Tematy do poruszania 
 ## 20-30 slajdów
 
 ---
 
 # Tranzystor bipolarny
 
-* budowa - sklada sie z 3 warstw polprzewodnika o roznym typie przewodnictwa w dwoch mozeliwych ułozeniach pnp i npn poszczegolne warstwy nosza nazwy
+* budowa - składa się z 3 warstw półprzewodnika o różnym typie przewodnictwa w dwóch możliwych ułożeniach pnp i npn poszczególne warstwy noszą nazwy
 [pnp]("pnp.png"),[npn]("npn.png")
 
 	1. emiter (E) warstwa silnie domieszkowana - co to znaczy?
-	2. baza (B) warstw slabo domieszkowana i cieńsza
+	2. baza (B) warstw słabo domieszkowana i cieńsza
 	3. kolektor (C)
 
 	tworza sie przez to polaczenia p-n (połączenia połprzewodnikow o roznych typach przewodnictwa) 
@@ -17,11 +17,10 @@
 * zasada działania - 
 
 # Wzmacniacze tranzystorowe (podstawy budowy) w układzie
-wzmacniacz tranzystorowy to wzmacniacz w korym jako elementy czynne wykorzystywane sa tranzystory dzielimy je z względu na to który element jest wspólny pomiędzy sygnałem wejściowym a wyjściowym:
-
-* wspólnego emiter[c_emiter]("c_emiter.png) - najczesciej uzywany rodzaj wzmacniacza uzywa on do dzialania ulozenia dwoch rezsytrorow tworzacych dzielnik napiecia  
-* wspólny kolektor[c_kolektor]("c_kolektor.gif") - produkuje napiecie wyjsciowe na obciazeniu emitera które jest w fazie z napieciem wejsicowym ,nie podnosi napiecia, uzywany kiedy kiedy wejscie o wysokiej impednacji musi być podipięte do wyjscia o niskiej wymagajac wysokiego wzrostu nateznia nazwa bierze sie z faktu ze kolektor tranyzstora jest efektywnie uziemiony przez zasilacz. 
-* róznica w pracy pomiedzy nimi - sa pewnego rodzaju przeciwienstwami siebie nawzajem pod względem budowy - 
+wzmacniacz tranzystorowy to wzmacniacz w którym jako elementy czynne wykorzystywane są tranzystory dzielimy je z względu na to który element jest wspólny pomiędzy sygnałem wejściowym a wyjściowym:
+* wspólnego emiter[c_emiter]("c_emiter.png) - najczęściej używany rodzaj wzmacniacza używa on do działania ułożenia dwóch rezystorów tworzących dzielnik napięcia  
+* wspólny kolektor[c_kolektor]("c_kolektor.gif") - produkuje napięcie wyjściowe na obciążeniu emitera które jest w fazie z napięciem wejściowym ,nie podnosi napięcia, używany kiedy kiedy wejście o wysokiej impedancji musi być podpięte do wyjścia o niskiej wymagając wysokiego wzrostu natężenia nazwa bierze się z faktu ze kolektor tranzystora jest efektywnie uziemiony przez zasilacz. 
+* różnica w pracy pomiędzy nimi - są pewnego rodzaju przeciwieństwami siebie nawzajem pod względem budowy - 
 
 # Pasmo przenoszenia wzmacniacza 
 
@@ -48,4 +47,4 @@ wzmacniacz tranzystorowy to wzmacniacz w korym jako elementy czynne wykorzystywa
 * [tranzystor wiki](https://pl.wikipedia.org/wiki/Tranzystor_bipolarny)
 * [comon collector amplifier](https://www.electronics-tutorials.ws/amplifier/common-collector-amplifier.html)
 * [common emiter amplifier](https://www.electronics-tutorials.ws/amplifier/amp_2.html)
-* [zlacze p-n](https://pl.wikipedia.org/wiki/Z%C5%82%C4%85cze_p-n)
+ [złącze p-n](https://pl.wikipedia.org/wiki/Z%C5%82%C4%85cze_p-n)
