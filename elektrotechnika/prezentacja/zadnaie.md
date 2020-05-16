@@ -14,12 +14,13 @@
 
 	tworza sie przez to polaczenia p-n (połączenia połprzewodnikow o roznych typach przewodnictwa) 
 
-* zasada działania - 
+* zasada działania - tranzystory w najprostszym ujęciu sterują prądem lub go wzmacniają, jeżeli do bazy przyłożymy niewielkie względem emitera napięcie to elektrony z emitera zaczną się przemieszczać w stronę bazy ale jako że warstwa bazy jest słabo domieszkowana i cienką to to duża część elektronów przemieści się do kolektora jako że mechanizm ten nie jest idealny to przez bazę płynie także nie wielki niepożądany prąd używamy natomiast prąd kolektora przez który przepływa zdecydowana większość elektronów.
 
 # Wzmacniacze tranzystorowe (podstawy budowy) w układzie
-wzmacniacz tranzystorowy to wzmacniacz w którym jako elementy czynne wykorzystywane są tranzystory dzielimy je z względu na to który element jest wspólny pomiędzy sygnałem wejściowym a wyjściowym:
-* wspólnego emiter[c_emiter]("c_emiter.png) - najczęściej używany rodzaj wzmacniacza używa on do działania ułożenia dwóch rezystorów tworzących dzielnik napięcia  
-* wspólny kolektor[c_kolektor]("c_kolektor.gif") - produkuje napięcie wyjściowe na obciążeniu emitera które jest w fazie z napięciem wejściowym ,nie podnosi napięcia, używany kiedy kiedy wejście o wysokiej impedancji musi być podpięte do wyjścia o niskiej wymagając wysokiego wzrostu natężenia nazwa bierze się z faktu ze kolektor tranzystora jest efektywnie uziemiony przez zasilacz. 
+wzmacniacz tranzystorowy to wzmacniacz w którym jako elementy czynne wykorzystywane są tranzystory dzielimy je z względu na to który element jest wspólny pomiędzy sygnałem wejściowym a wyjściowym 
+* wspólnego emiter ![c_emiter](c_emiter.png) - najczęściej używany rodzaj wzmacniacza używa on do działania ułożenia dwóch rezystorów tworzących dzielnik napięcia  wzmacniane napiecie podawane jest pomiedzy baze a emiter tranzystora, jako ze sygnal wyjsciowy zbierany jest z emitera polaryzacja na wyjsciu takiego układu jest odwrócona najczęściej wykorzystywany w wzmacniaczach niezbyt wysokich czestotliwosci, oferuja wysokie wzmocnienie napieciowe i prądowe.
+* wspólny kolektor ![c_kolektor](c_kolektor.gif) - produkuje napięcie wyjściowe na obciążeniu emitera które jest w fazie z napięciem Wejściowym ,nie podnosi napięcia, 
+używany kiedy kiedy wejście o wysokiej impedancji musi być podpięte do wyjścia o niskiej wymagając wysokiego wzrostu natężenia nazwa bierze się z faktu ze kolektor tranzystora jest efektywnie uziemiony przez zasilacz. napiecie wyjsciowe odbierane jest pomiedzy kolektorem a emiterem wiec emiter jest wspolny dal wejscia i wyjsca nie wzmacnia napiecia charakteryzuje sie duzym wzmocnieniem pradowym
 * różnica w pracy pomiędzy nimi - są pewnego rodzaju przeciwieństwami siebie nawzajem pod względem budowy - 
 
 # Pasmo przenoszenia wzmacniacza 
