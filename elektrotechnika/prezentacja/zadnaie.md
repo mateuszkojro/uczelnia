@@ -14,7 +14,7 @@
 
 	tworza sie przez to polaczenia p-n (połączenia połprzewodnikow o roznych typach przewodnictwa) 
 
-* zasada działania - tranzystory w najprostszym ujęciu sterują prądem lub go wzmacniają, jeżeli do bazy przyłożymy niewielkie względem emitera napięcie to elektrony z emitera zaczną się przemieszczać w stronę bazy ale jako że warstwa bazy jest słabo domieszkowana i cienką to to duża część elektronów przemieści się do kolektora jako że mechanizm ten nie jest idealny to przez bazę płynie także nie wielki niepożądany prąd używamy natomiast prąd kolektora przez który przepływa zdecydowana większość elektronów. Stosunek prądu emitera do prądu bazy nazywamy wzmocnieniem prądowym i oznaczamy grecka beta
+* zasada działania - tranzystory w najprostszym ujęciu sterują prądem lub go wzmacniają, jeżeli do bazy przyłożymy niewielkie względem emitera napięcie to elektrony z emitera zaczną się przemieszczać w stronę bazy ale jako że warstwa bazy jest słabo domieszkowana i cienką to to duża część elektronów przemieści się do kolektora jako że mechanizm ten nie jest idealny to przez bazę płynie także nie wielki niepożądany prąd używamy natomiast prąd kolektora przez który przepływa zdecydowana większość elektronów. Stosunek prądu emitera do prądu bazy nazywamy wzmocnieniem prądowym i oznaczamy grecka β
 
 # Wzmacniacze tranzystorowe (podstawy budowy) w układzie
 wzmacniacz tranzystorowy to wzmacniacz w którym jako elementy czynne wykorzystywane są tranzystory dzielimy je z względu na to który element jest wspólny pomiędzy sygnałem wejściowym a wyjściowym 
@@ -25,7 +25,8 @@ używany kiedy kiedy wejście o wysokiej impedancji musi być podpięte do wyjś
 
 # Pasmo przenoszenia wzmacniacza 
 
-* definicja 
+* definicja - Pasmo przenoszenia określa zakres częstotliwości, które są przenoszone przez dane urządzenie bez stratne  Wyobraźmy sobie sygnał od 1 Hz do 100 kHz, w którym wszystkie częstotliwości mają ten sam poziom. Po przejściu przez element audio okazuje się, że taki sygnał nie zostanie przeniesiony w całości. Wzmacniacze przenoszą bez strat sygnał analogowy w określonym przedziale częstotliwości, to jest w ich pasmie przenoszenia.W sprzęcie audio np granice tego pasma określone są jako częstotliwość której poziom jest 3 dB niższy od średniego norma dla takich urządzeń mówi ze powinny mieć pasmo przenoszenia od 20Hz do 20kHz lub szersze co ma zapewnić odpowiednie odtwarzanie w zakresie słyszalnym dla człowieka.
+
 * sposób pomiaru
 * znaczenie
 * oporność wejściowa i wyjściowa wzmacniacza 
@@ -49,3 +50,4 @@ używany kiedy kiedy wejście o wysokiej impedancji musi być podpięte do wyjś
 * [comon collector amplifier](https://www.electronics-tutorials.ws/amplifier/common-collector-amplifier.html)
 * [common emiter amplifier](https://www.electronics-tutorials.ws/amplifier/amp_2.html)
  [złącze p-n](https://pl.wikipedia.org/wiki/Z%C5%82%C4%85cze_p-n)
+ [transistor amplifier](https://www.tutorialspoint.com/amplifiers/transistor_as_an_amplifier.htm)
