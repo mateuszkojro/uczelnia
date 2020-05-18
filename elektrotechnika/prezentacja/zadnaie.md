@@ -19,7 +19,7 @@
 # Wzmacniacze tranzystorowe (podstawy budowy) w układzie
 wzmacniacz tranzystorowy to wzmacniacz w którym jako elementy czynne wykorzystywane są tranzystory dzielimy je z względu na to który element jest wspólny pomiędzy sygnałem wejściowym a wyjściowym 
 * wspólnego emiter ![c_emiter](c_emiter.png) - najczęściej używany rodzaj wzmacniacza używa on do działania ułożenia dwóch rezystorów tworzących dzielnik napięcia  wzmacniane napięcie podawane jest pomiędzy bazę a emiter tranzystora, jako ze sygnał wyjściowy zbierany jest z emitera polaryzacja na wyjściu takiego układu jest odwrócona najczęściej wykorzystywany w wzmacniaczach niezbyt wysokich częstotliwości, oferują wysokie wzmocnienie napięciowe i prądowe.
-* wspólny kolektor ![c_kolektor](c_kolektor.gif) - produkuje napięcie wyjściowe na obciążeniu emitera które jest w fazie z napięciem Wejściowym ,nie podnosi napięcia, 
+* Wspólnicy kolektor ![c_kolektor](c_kolektor.gif) - produkuje napięcie wyjściowe na obciążeniu emitera które jest w fazie z napięciem Wejściowym ,nie podnosi napięcia, 
 używany kiedy kiedy wejście o wysokiej impedancji musi być podpięte do wyjścia o niskiej wymagając wysokiego wzrostu natężenia nazwa bierze się z faktu ze kolektor tranzystora jest efektywnie uziemiony przez zasilacz. Napięcie wyjściowe odbierane jest pomiędzy kolektorem a emiterem wiec emiter jest wspólny dal wejścia i wyjścia nie wzmacnia napięcia charakteryzuje się dużym wzmocnieniem prądowym
 * różnica w pracy pomiędzy nimi - są pewnego rodzaju przeciwieństwami siebie nawzajem pod względem budowy - 
 
