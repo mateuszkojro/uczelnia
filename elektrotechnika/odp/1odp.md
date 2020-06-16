@@ -1,0 +1,91 @@
+---
+# NOTES
+---
+
+1. struktura pasmowa ciała stałego
+    * przerwa energetyczna  - jej szerokosc decyduje o tym czy material jest przewodnikiem polprzewodnikiem czy izolatorem - klasyczny polprzewodnik - 2eV
+    * kazde cialo sklada sie z stanow pustch poziomu fenriego stanow zapelnioncyh (pasmo przewodnictwa - istnieja wolne poziomy energetyczne elektrony mga do nich przejsc co oznacza ze przewodza prad) i pasma walencyjnego szerokosc pasm i polozenie poziomu fermiego okresla wiekszosc wlasnosci elektornowych kazdego materialu
+    
+2. TODO: Przerwa energetyczna a właściwości optyczne materiału.  - Za pomocą światła i obliczeń można badać szerokość przerwy energetycznej ciała. je
+
+3. Prad elektryczny to uporzadkpwany ruch elektronow wynikajacy z roznicy potencjalow 
+    * przewodnictwo 1 rodzaju - ruch elektronow swobodnych
+    * przewdnictwo 2 rodzaju - opiera sie na przenoszeniu pradu przez jony dodatnie i ujemne (dysocjacia kwasow zasad i soli)
+    * prawo ohma R = U/I
+    * HACK: poprawic prawa kirchoffa
+    	1. suma natezen pradow wplywajacych do oczka pradu rowna sie sumie natezen pradow wyplywajacych
+    	2. suma spadkow napiecia w oczku pradu rowna sie zero
+4. prad mierzymy rownolegle napiecie szeregowo amperomierz ma duzy opor voltomierz maly
+5. zrodlo napieca i pradu ISSUE: nie wiem czy to jest ok mowie z glowy
+    * zrdolo napiecia - podaje zawsze stale napiecie bez wzgledu na pobierane natezenie 
+    * zrodlo pradu - podaje zawsze staly prad bez wzgleu na napiecie czerpane 
+6. kirchof i obliczanie obwodow - tak naprawde to po prostu prawa kirchoffa
+7. Kondensator: parametry, zasada działania, od czego zależy pojemność kondensatora, rodzaje kondensatorów
+    * parametry: pojemnosc - ile ladunku moze zgromadzic(farad 1C/1V)
+    * dwa przewodniki oddzielone dielektrykiem
+    * energia zmagazynowana 1/2(CU^2)
+    * pojemnosc C = E0ErS/d (d - odleglosc okl,s - powierzchnia okl, E0 przenikalnosc prozni, Er - ile razy przeniklasnosc osrodka jest wieksz niz prozni)
+    FIXME: poprawic formatowanie
+    ```
+    pojemność znamionowa - CN wyrażona w faradach, określa zdolność kondensatora do gromadzenia ładunków elektrycznych, podawana na obudowie kondensatora;
+    
+        napięcie znamionowe – UN, jest największym napięciem, które może być przyłożone trwale do kondensatora. Napięcie to jest na ogół sumą napięcia stałego i wartości szczytowej napięcia zmiennego;
+    
+        tangens kąta stratności – tg γ, stosunek mocy czynnej do biernej wydzielającej się w kondensatorze przy napięciu sinusoidalnie zmiennym o określonej częstotliwości;
+    
+        prąd upływowy – IU, prąd płynący przez kondensator, przy doprowadzonym stałym napięciu;
+    
+        temperaturowy współczynnik pojemności – αC, określa względną zmianę pojemności, zależną od zmian temperatury.
+    ```
+8.  FIXME: Srawdzic wzory pojemnosc
+    * szeregowo - 1/fz = 1/f1 + 1/f2;
+    * rownolegle - fz = f1+ f2
+9. reaktancja kondensatora - TODO: slajd 112
+10. Pole magnetyczne wokół przewodnika z prądem. - wookol kazdego przedonika w ktorym przeplywa prad wystepuje pole elektromagnetczyne ktorego kierunek mozemy okreslic za pomoca reguly prawej dloni TODo:regula prawej dloni
+    * natezenie pola - 1/2piR
+    * wektor indukcji - przenikalnosc_magnetyczna_prozni* 2I/4piR
+    * R = odleglosc od przewodnika, I natezenie pradu, H - natezenie, B - wektor
+11. indukcja i strumien magnetyczny
+12. parametry cewki
+    * indukcynosc - L - 1H (henr) - element zachowawczy  - zachodzi w nim proces akumulacji energii (prad plynac w obwodzie tworzy strumień magnetyczny) L = strumien_magnetyczny / prad_ktory_go_wytworzyl
+    * sila elektromotoryczna E = -L dI/dt
+13. wartosc skuteczna - rowna stalemu napieciu przylozonemu do tego samego oporu: pradu dodac wzory dla napiecia i natezenia tak naprawde skomplikowana calka dla sinusoidalnych:
+    * prad - I = Imax/sqrt(2)
+    * napiecie - U = Umax/sqrt(2)
+    * moc P = I^2 * R
+14. TODO: laczenie szeregowe RL / RC
+15. TODO: szeregowe polaczenie RLC warunki wystapienia rezonansu napiec 
+16. Filtr rc - sklada sie z rezystora wlaczonego szeregowo z odbiornikiem i kondensatora wlaczonego ronwolegle lub kondenstora i cewki jego zadaniem jest przepuszcanie czestotliwosci ponizej ustalonej wartosci ISSUE: na wiki jest wiecej  
+17. TODO: stany nieustalone w obwodach rc HARD
+18. TODO: Podaj warunki na stałą czasową RC umożliwiające prawidłowe różniczkowanie i całkowanie przebiegu wejściowego o okresie T 
+19. TODO: wplyw czestotliwosci 
+Ogólna zasada działania transformatora, wpływ częstotliwości na moc transformatora. - przenosi energie pradu zmiennego z zachowaniem czestotliwosci zwykle nastepuje zmiana napiecia - wyjatek to transformator separacyjny - najczesciej stosowany z wzgledow bezpiecznstwa w ukladach o wyskim napieciu przy czym czestotliwosc pradu pozostaje bez zmian co znaczy ze nie ma ona wplywu. natomiats kazdy tranzystor jest przystosowany do dzialania w jakims zakresie czestotliwosci
+20. TODO: Zasada działania silnika prądu stałego - moze dzialac jak silnik i jak pradnica 
+21. ISSUE not verbose enough Silniki krokowe zasada działania (ogólnie) sposoby sterowania - silnik w ktorym implsowe zasilanie pradem powotuje obrot o scisle okreslony kat - krok kat wynika z ilosci dostarczonych impulsow a predkosc z ich czestotliwosci
+22. prawo Moora - ilosc tranzystorow w ukladzie scalonym rosnie wykladniczo (podwaja sie w jednakowych kresach czasu)
+23. TODO: polprzewodnik samoistny i domieszkowany
+	* samoistny - 
+	* domieszkowany - w wyniku celowego wprowadzenia atomow obcego pierwiastka do polprzewodnika tworza sie nowe poziomy energetyczne w zwiazku z czym jego rezystancja silnie maleje
+24. TODO: zasada dzialania diody półprzewodnikowej - element zawierajacy zlacze p-n z dwiema koncowkami - anoda i katoda - parametry jak zlacze p-n - stosuje sie w ukladach prostowania pradu zmiennego i w uladach modulacji detekcji i przelaczania sygnalow pradu zmiennego
+25. TODO: podstawowe zastosowania diody - prostownik jedno i dwu połówkowy. 
+	* prostownik jedno polowkowy - majac napiecie przemienne zbiera tylko napiecie dodatnie "odcinajac" napiecie ujemne - najprostsza realizacja to dioda prostownicza - wady duze tetnienie napieca - wykorzystywana jest tylko polowa dostepnej energii. - fale z odstepami
+	* prostownik dwu polowkowy - fale bez odstepow wykorszytuja cala energie zarowno ta z ujemnego jak i dodatniego sygnalu (obraca ujemny sygnal) najczestrza realizacja to tzw mostek Graetza 
+26. TODO: Zasada działania diody Zenera –zastosowanie w układzie stabilizatora napięcia i ukladach ogranicznikow dzialaja na zasadzie przebicia Zennera lub zjawiska przebicia Lawinowego 
+27.  Diody LED, OLED i QLED
+	* LED - ight emiting diod - dziala na pdstawie zjawiska rekombinacji ladunkow (rekombinacja promienista) - elektroluminescencji materia jest pobudzana do emisji swiatla poprzez prad lub pole elektryczne
+	* OLED - organiczna dioda elektroluminesecyjna - swieci dzieki dzieki efektowi luminescennji zwiazku organicznego umieszczonego pomiedzy dwiema elektrodami z ktorych przynajmniej jedna jest przezroczysta wykorzystywane jest w smartwonach i telewizorach
+	* QLED - 
+28. ISSUE: nie wiem czy tak jak opisane na slajdzie 100 w pdfie  tranzystor bipolarny - 3 warstwy przewodnika o roznym typie przewodnictwa , niewielki prad plynacy pomiedzy baza i emiterem steruje wiekszym pomiedzy emiterem a kolektorem sa 2 rodzaje npn i pnp ISSUE: wiecej o zasadzie dzialania wiki jest spoko
+29. TODO: zasada dzialania tranzystora J-FET - tranzystor polowy zlaczony HARD
+30. TODO: zasada dzialania tranzystora MOS - tranzystor polowy HARD
+31. TODO: Wzmacniacz małosygnałowy w połączeniu OE
+32. TODO: Właściwości wzmacniaczy w połączeniu OE, OC, OB 
+32. TODO: Zniekształcenia harmoniczne sygnału we wzmacniaczach
+33. TODO: Rola ujemnego sprzężenia zwrotnego na zmniejszenie wpływu fluktuacji temperatury na zmiany prądu kolektora 
+34. TODO: Zasada pomiaru oporności wejściowej i wyjściowej czwórnika. 
+35. Tranzystor jako źródło prądowe - idealne zrodlo pradowe wymaga natezenie na wyjsciu niezalezne od oporu (sklada sie z zrodla napiecia i duzej rezystancji) jezeli zadowolimy sie wystepowaniem duzej rezystancji w okreslonym przedziale napiecia mozna jako takie zrodlo wykorzystac tranzystor. (bo ma maly opor statyczny i wysoki dynamiczny)
+37. FIXME: brakuje parametrow i wlasciwosci Wzmacniacz różnicowy, parametry i właściwości - wzmacniacz dwuwejsciowy skladajacy sie z dwoch tranzystorw w ukladzie wpspolnego emitera napiecie wyjsciowe zalezy od roznicy napiecia na pomiedzy wejsciami
+38. FIXME: Wzmacniacz operacyjny  - wielostopniowy wzmacniacz różnicowy prądu stałego charakteryzuje sie bardzo duzym wzmocnieniem napieciowym  - zwykle w polaczeniu z ukladem sprzezenia zwrotnego
+39. TODO: Szeregowy stabilizator napięcia  - uklad stabilizatora napiecia pradu posiadajacy element regulacyjny wlaczany szeregowo z zrodlem i odbiornikiem (tranzystor) kompensujacy zmiany wielkosci stabilizowanej
+40. TODO: Stabilizator napięcia ze sprzężeniem zwrotnym 
+41. TODO: Na czym polega działanie układu synchronizacji w oscyloskopie -

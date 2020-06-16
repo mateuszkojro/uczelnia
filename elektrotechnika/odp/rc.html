@@ -1,0 +1,1086 @@
+<html>
+
+<head>
+<title>Podstawy elektroniki. Wzmacniacz napięciowy małych sygnałów RC</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<META content="" name=Description><LINK 
+href="css/style.css" rel=STYLESHEET 
+type=text/css>
+</HEAD>
+<BODY bgColor=#ffffff>&nbsp;&nbsp;&nbsp; <A name=menu></A><BR>
+<CENTER>
+
+
+<TABLE cellPadding=8 class=podtytul width="80%">
+  <TBODY>
+  <TR>
+    <TD class=tytul>Wzmacniacz napięciowy małych sygnałów RC </TD>
+    <TD style="TEXT-ALIGN: center"><A class=druk 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc_druk.html" 
+      style="TEXT-DECORATION: none">druk</A> <BR><A class=back 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html" 
+      style="TEXT-DECORATION: none">powrót</A> </TD>
+    <TD width=23><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/main.html"><IMG 
+      align=left border=0 height=25 
+      src="img/home.gif" 
+  width=25></A></TD></TR></TBODY></TABLE><BR>
+<TABLE width=600>
+  <TBODY>
+  <TR>
+    <TD><BR>0. <A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#1">Wstęp</A> 
+      <BR>1. <A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#2">Schemat wzmacniacza tranzystorowego RC - jego
+    podstawowe parametry</A>
+ <BR>
+2. <A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#2">Funkcja poszczególnych elementów wzmacniacza
+    - ich wpływ na pracę układu </A> <BR>3. <A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#3">Pasmo przenoszenia, częstotliwości graniczne
+    wzmacniacza, wzmocnienie - sposób określania i pomiaru </A> 
+      <BR>4. <A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#5">Schemat zastępczy wzmacniacza tranzystorowego
+    w układzie OE oparty na modelu hybryd PI </A> <BR>5. <A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#6">Schemat wzmacniacza dla składowej stałej i
+    zmiennej napięcia wejściowego</A> <BR>6. <A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#7">Sposób obliczania częstotliwości dolnej
+    wzmacniacza</A> <BR>7. <A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#8">Sposób pomiaru rezystancji wejściowej i wyjściowej
+    wzmacniacza</A> <BR>8. <A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#9">Wzmacniacz RC z tranzystorem unipolarnym</A>  <BR>9. <A 
+      href="#">Znajomość
+    instrukcji do ćwiczenia</A>  </TD></TR></TBODY></TABLE><BR>
+
+
+<TABLE cellPadding=4 class=podtytul width="60%">
+  <TBODY>
+  <TR>
+    <TD class=podtytul>Literatura </TD>
+    <TD width=23><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/main.html"><IMG 
+      align=left border=0 height=25 
+      src="img/home.gif" width=25></A><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/wzmroznicowy.html#menu"><IMG 
+      border=0 height=25 src="img/gora.gif" 
+      width=25></A></TD></TR></TBODY></TABLE><BR>
+<TABLE width="60%">
+  <TBODY>
+  <TR>
+    <TD>1. Z. Nosal, J. Baronowski „Układy elektroniczne cz. I.
+	Układy analogowe liniowe.”<BR>
+	2. W. Wawrzyński "Podstawy Elektroniki."<BR>
+</TD></TR></TBODY></TABLE></CENTER><BR>
+<HR>
+<BR><A name=1></A>
+<CENTER>
+<TABLE cellPadding=4 class=podtytul width="60%">
+  <TBODY>
+  <TR>
+    <TD class=podtytul>Wstęp</TD>
+    <TD width=23><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/main.html"><IMG 
+      align=left border=0 height=25 
+      src="img/home.gif" width=25></A><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#menu"><IMG 
+      border=0 height=25 src="img/gora.gif" 
+      width=25></A></TD></TR></TBODY></TABLE></CENTER>
+<DIV>&nbsp; 
+
+
+Wzmacniacze napięciowe małych sygnałów odznaczają się tym, że
+pracujące w nich tranzystory mogą być uważane za elementy liniowe i odpisane
+za pomocą parametrów różniczkowych, dopuszczalne zaś moce napięcia i prądy
+tranzystorów nie są w pełni wykorzystane. We wzmacniaczach napięciowych małej
+częstotliwości tranzystory pracują z reguły w układzie wspólnego emitera /OE/,
+ponieważ ten układ odznacza się dużym wzmocnieniem napięciowym i prądowym
+oraz zbliżonymi do siebie wartościami rezystancji wejściowej i wyjściowej.
+Wzmacniacze w układzie wspólnego kolektora /OC/ i wspólnej bazy /OB/
+stosowane są znacznie rzadziej, zazwyczaj jako stopnie dopasowujące. Schemat
+jednostopniowego wzmacniacza napięciowego małej częstotliwości przedstawiono
+na rysunku poniżej.<br>
+
+<center>
+<img src="img_rc/autorz1.jpg"><br>
+
+
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+
+Rys. 1 Schemat jednostopniowego wzmacniacza napięciowego w układzie WE
+
+</B></SPAN></p>
+
+
+<DIV>&nbsp; 
+We wzmacniaczach napięciowych małej częstotliwości
+powszechnie stosuje się ujemne sprzężenie zwrotne, które między innymi zwiększa
+stałość ich parametrów, zwiększa szerokość przenoszonego pasma i
+zmniejsza wprowadzane zniekształcenia nieliniowe. Prostym sposobem realizacji
+sprzężenia zwrotnego w układzie wzmacniacza z rysunku 1 jest nie blokowanie
+lub tylko częściowe blokowanie rezystora Re kondensatorem Ce o dużej pojemności.
+Sprzężenie takie jest sprzężeniem prądowym szeregowym i powoduje
+zmniejszenie wzmocnienia napięciowego K<sub>u</sub> oraz zwiększenie
+rezystancji wejściowej r<sub>we</sub> i wyjściowej r<sub>wy</sub> wzmacniacza.
+W mniejszym stopniu – zależnym od wartości rezystorów R<sub>1</sub> i R<sub>2</sub>
+następuje również zmniejszenie dolnej częstotliwości granicznej f<sub>d</sub>
+i zwiększenie górnej częstotliwości granicznej f<sub>g</sub> wzmacniacza.
+Sygnał zmienny nie przedostaje się z wyjścia na wejście układu (brak sprzężenia).
+
+<br>
+<hr>
+<br>
+
+<a name=2></a>
+<CENTER>
+<TABLE cellPadding=4 class=podtytul width="60%">
+  <TBODY>
+  <TR>
+    <TD class=podtytul>Schemat wzmacniacza tranzystorowego RC w układzie OE (wspólny emiter) - jego
+podstawowe parametry i wpływ poszczególnych elementów na pracę układu</TD>
+    <TD width=23><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/main.html"><IMG 
+      align=left border=0 height=25 
+      src="img/home.gif" width=25></A><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#menu"><IMG 
+      border=0 height=25 src="img/gora.gif" 
+      width=25></A></TD></TR></TBODY></TABLE></CENTER>
+
+
+
+<DIV>&nbsp;
+Schemat jednostopniowego tranzystorowego wzmacniacza pasmowego w układzie wspólnego emitera przedstawiono na poniższym rysunku (Rys. 2)
+<br>
+<center>
+
+<img src="img_rc/autorz2.jpg">
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+Rys.2.
+Schemat badanego układu wzmacniacza
+
+</B></SPAN></p>
+
+
+<DIV>&nbsp; 
+
+
+
+
+<ul style="margin-top:0cm" type="disc">
+  <li class="MsoNormal" style="mso-list:l1 level1 lfo8;tab-stops:list 36.0pt"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:PL">Rezystancja
+    Rg reprezentuje oporność wewnętrzną źródła sygnału wejściowego.<o:p>
+    </o:p>
+    </span></li>
+  <li class="MsoNormal" style="mso-list:l1 level1 lfo8;tab-stops:list 36.0pt"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:PL">R_L
+    - rezystancja obciążenia układu.<o:p>
+    </o:p>
+    </span></li>
+  <li class="MsoNormal" style="mso-list:l1 level1 lfo8;tab-stops:list 36.0pt"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:PL">Elementy
+    R1 i R2 (dzielnik napięciowy) stanowią układ ustalający punkt pracy
+    tranzystora.</span></li>
+</ul>
+<p class="MsoBodyText3" style="margin-left:36.0pt;text-indent:-18.0pt;mso-list:
+l1 level1 lfo8;tab-stops:list 36.0pt"><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Rc - rezystor kolektorowy (wpływający między innymi na
+wzmocnienie napięciowe i prądowe układu)</p>
+<ul style="margin-top:0cm" type="disc">
+  <li class="MsoNormal" style="mso-list:l1 level1 lfo8;tab-stops:list 36.0pt"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:PL">Pojemności
+    C1 i C2 sprzęgają badany układ ze źródłem sygnału sterującego
+    (poprzedni stopień) oraz obciążeniem, separując te układy stałoprądowo.
+    W przypadku, gdyby sygnał wejściowy posiadał niezerową składową stała,
+    wtedy zostanie ona odfiltrowana przez kondensator, który po naładowaniu
+    nie będzie przewodził tejże składowej, więc punkt pracy tranzystora nie
+    ulegnie przesunięciu. <o:p>
+    </o:p>
+    </span></li>
+  <li class="MsoNormal" style="mso-list:l1 level1 lfo8;tab-stops:list 36.0pt"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:PL">Kondensator
+    Ce zwiera składową zmienną prądu emitera (wpływa na przebieg
+    charakterystyk częstotliwościowych w zakresie małych częstotliwości).<o:p>
+    </o:p>
+    </span></li>
+  <li class="MsoNormal" style="mso-list:l1 level1 lfo8;tab-stops:list 36.0pt"><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:PL">Re
+    - rezystor emiterowy (wraz z dzielnikiem napięcia - układem R1 i R2 ustala
+    punkt pracy tranzystora we wzmacniaczu).<span style="mso-spacerun: yes">&nbsp;
+    </span>Zmiany napięcia na rezystorze emiterowym Re powodują zmianę
+    potencjału emitera i powstanie ujemnego sprzężenia zwrotnego dla prądu
+    stałego. </span></li>
+</ul>
+
+
+Dodatkowo rezystor ten
+stabilizuje punkt pracy (napięcie Uce oraz prąd Ic) pod względem termicznym: Jeśli temperatura układu rośnie
+to prąd Ic rośnie, podobnie jak napięcie Ue, które jest od tego prądu zależne
+w sposób : Ue=Re*Ic. Ponieważ Ub=Ube+Ue oraz Ub=const,
+wiec jeśli Ue rośnie, Ube musi zmaleć. Maleją również prądy bazy oraz
+kolektora: Ic oraz Ib (fakt ten wynika z charakterystyki wejściowej), a Ic= <img src="img_rc/autorz3.gif">
+Ib, więc automatycznie Ic również musi zmaleć.<br>
+<p>
+
+
+</P>
+<b>
+2a.
+Schemat wzmacniacza w konfiguracji wspólnego kolektora OC :
+</b>
+<center>
+<img src="img_rc/autorz4.jpg">
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+Rys.
+3 Schemat wzmacniacza w konfiguracji wspólnego kolektora OC
+
+</B></SPAN></p>
+
+
+<DIV>&nbsp; 
+
+Wzmacniacz z tranzystorem w
+konfiguracji wspólnego kolektora jest nazywany wtórnikiem emiterowym, gdyż
+wielkość napięcia wyjściowego jest prawie taka sama jak wielkość napięcia
+wejściowego. Wzmocnienie napięciowe w tym układzie jest bliskie jedności
+<img src="img_rc/autorz5.gif">, a faza napięcia wyjściowego jest zgodna z fazą napięcia
+wejściowego. Zatem napięcie wyjściowe „wtóruje” napięciu wejściowemu.
+Punkt pracy tego wzmacniacza zależy od rezystancji R1, R2, Re.
+Ponieważ rezystancja wejściowa
+tranzystora Rwet (rezystancja wejściowa tranzystora między jego bazą a
+kolektorem) ma dużą wartość rezystancja Rb (wynikająca z równoległego połączenia
+rezystorów R1 i R2 polaryzujących bazę
+<img src="img_rc/autorz6.gif">) zmniejsza znacznie rezystancję wejściową układu.
+Celowe jest zatem stosowanie dużych wartości rezystancji R1 i R2, ale jest to
+ograniczone wymaganiami stałości punktukt pracy<span style="mso-spacerun:
+yes">&nbsp; (stałości Ic). (rezystory te muszą mieć rezystancje rzędu
+setek kiloomów, aby zbyt duży prąd bazy nie wprowadził momentalnie
+tranzystora w stan nasycenia, wtedy bowiem zostanie utracona liniowa
+charakterystyka obszaru pracy i utracimy własność wzmacniającą układu
+wzmacniacza). Rezystancja wyjściowa jest
+zwykle mała (kilkadziesiąt do kilkaset omów).<br>
+Cechy układu wzmacniacza opartego na układzie wsólnego kolektora (czyli duża
+rezystancja wejściowa Rwe i mała rezystancja wyjściowa Rwy) spowodowały, że
+wtórnik emiterowy służy do dopasowywania poziomów impedancji pomiędzy
+stopniami wzmacniaczy.<o:p>
+<br>
+<p>
+
+
+</P>
+<b>2b.
+Schemat wzmacniacza w konfiguracji wspólnej bazy WB :</b>
+<center>
+<img src="img_rc/autorz7.jpg">
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+
+Rys.
+4 Schemat wzmacniacza w układzie wspólnej bazy.
+</B></SPAN></p>
+
+<center>
+
+<img src="img_rc/autorz8.jpg">
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+
+
+Rys.
+5 Schemat wzmacniacza w układzie wspólnej bazy przedstawiony zgodnie z
+konwencją układów poprzednich (układ analogiczny do układu z Rys. 4)
+</B></SPAN></p>
+
+
+
+
+<DIV>&nbsp; 
+
+Układ ten jest bardzo rzadko
+stosowany w zakresie małych częstotliwości jako samodzielny wzmacniacz. Najczęściej,
+podobnie jak układ WK, występuje w połączeniach z innymi konfiguracjami w układzie
+wielotranzystorowym. </font> Układ ten może dostarczyć wzmocnienia napięciowego o
+wartościach porównywalnych ze wzmacniaczem w konfiguracji WE, jednak przy
+bardzo małej rezystancji wejściowej wzmacniacza rzędu 
+<img src="img_rc/autorz9.gif">- dziesiątek,
+setek omów. Wzmocnienie prądowe w tym układzie jest &lt;1. Układ wzmacniacza
+w konfiguracji wspólnej bazy ma dobre właściwości częstotliwościowe (duża
+częstotliwość graniczna), co pozwala uzyskać wzmocnienie napięciowe w
+takich zakresach, gdy praca w innych konfiguracjach jest już niemożliwa
+(najszersze pasmo przenoszenia).
+
+<br>
+<p>
+
+
+</P>
+
+<b>2c.Podstawowe
+parametry układu wzmacniacza w konfiguracji wspólnego emitera WE.</b>
+<br>Podstawowymi
+parametrami roboczymi wzmacniacza są : wzmocnienie napięciowe 
+<img src="img_rc/autorz10.gif">, wzmocnienie prądowe 
+<img src="img_rc/autorz11.gif">, rezystancja wejściowa R_we oraz rezystancja wyjściowa
+R_wy. Aby wyznaczyć parametry wzmacniacza w zależności od elementów układu
+skorzystajmy z jego schematu zastępczego : <br>
+<center>
+<img src="img_rc/autorz12.jpg"><br>
+<img src="img_rc/autorz13.jpg">
+</center>
+
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+
+
+Rys.
+6 Schemat zastępczy dla zakresu średnich częstotliwości układu wzmacniacza
+</B></SPAN></p>
+
+
+
+
+<DIV>&nbsp; 
+<br>
+
+
+Schemat ten jest schematem
+wzmacniacza dla średnich częstotliwości, uwzględniający jedynie składową
+zmienną, a więc transmisje sygnału przez wzmacniacz.</span></p>
+Zasada konstrukcji tego schematu
+polega na przestrzeganiu następujących reguł :<br>
+1.stosowany jest uproszczony
+model tranzystora opisany parametrami mieszanymi h
+<br>
+2. dla rozpatrywanych średnich
+częstotliwości reaktancje kondensatorów są na tyle małe, że miejsca ich
+występowania można uznać za zwarcie<br>
+3.obydwa bieguny baterii (masa i
+Ucc) są zwarciem dla składowej zmiennej , co wynika z tego, że rezystancja
+wewnętrzna idealnego źródła napięciowego jest zerowa. <br>
+
+<img src="img_rc/autorz14.gif">, 
+<img src="img_rc/autorz15.gif">
+. Zatem wzmocnienie 
+<img src="img_rc/autorz16.gif"><br>
+<img src="img_rc/autorz17.gif"><br>
+Znak minus w powyższym wzorze
+oznacza, że faza napięcia wyjściowego jest odwrócona względem fazy napięcia
+wejściowego o 180<sup>o</sup>. Widać z powyższego, że zwiększenie wartości
+Rc i R_L zwiększa wzmocnienie napięciowe wzmacniacza.Wzmocnienie prądowe można
+obliczyć wyznaczając wartości prądów i1 oraz i2. Jak widać ze schematu
+zastępczego (przyjmując 
+<img src="img_rc/autorz18.gif">) :
+<img src="img_rc/autorz19.gif">, 
+<img src="img_rc/autorz20.gif">. Otrzymujemy więc:<br>
+<img src="img_rc/autorz21.gif">.<br>Widać z powyższego, że
+wzmocnienie prądowe jest zmniejszone w stosunku do największej możliwej wartości
+wzmocnienia tranzystora
+<img src="img_rc/autorz22.gif">na skutek wystąpienia podziału prądu w obwodzie wejściowym
+(czynnik 
+<img src="img_rc/autorz23.gif">oraz
+w obwodzie wyjściowym (czynnik
+<img src="img_rc/autorz24.gif">).Duże
+wartości wzmocnienia prądowego osiąga się przy dużych rezystancjach
+kolektorowych Rc i dużych rezystancjach polaryzujących bazę R1 i R2. Jednak
+ze względu na stałość punktów pracy zwiększanie tych rezystancji nie jest
+wskazane .Rezystancją wejściowa
+wzmacniacza określona jest zależnością :<br>
+
+<img src="img_rc/autorz25.gif">
+,natomiast rezystancja wyjściowa
+(tj. rezystancja widziana przez obciążenie Rl wzmacniacza :
+<img src="img_rc/autorz26.gif">W analizie parametrów pracy
+wzmacniacza milcząco przyjęty został uproszczony model hybryd (PI)
+tranzystora.
+
+<br>
+<p>
+
+
+</p>
+<b>2d. Wzmocnienie
+sygnałów – charakterystyka wyjściowa</b><br>
+Wzmacnianie sygnałów wygodnie jest omawiać posługując się
+charakterystykami wyjściowymi tranzystora, na które nanosimy prostą pracy.
+Prosta pracy wynika z zadanej wartości rezystancji obciążenia R<sub>c</sub>
+oraz napięcia zasilania U<sub>CC</sub>. Dla omawianego wzmacniacza prosta pracy
+dla prądu stałego dana jest równaniem <br>
+<img src="img_rc/autorz27.gif"><br>
+natomiast do prądu zmiennego:<br>
+
+<img src="img_rc/autorz28.gif">
+
+
+
+
+<center><img src="img_rc/autorz29.gif">
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+rys.
+7 Graficzna reprezentacja punktu pracy tranzystora
+
+
+<DIV>&nbsp; 
+<br>
+</b>
+
+
+Proste
+pracy powinny leżeć w obszarze dopuszczalnych napięć i prądów tranzystora,
+tak jak to przedstawiono na rysunku poniżej. Prosta pracy dla prądu stałego
+oznaczona jest linią przerywaną, prosta pracy dla prądu zmiennego linią ciągłą.
+
+
+Jeżeli
+układ ma wzmacniać sygnał o dużej amplitudzie, to prąd kolektora w punkcie
+pracy Q powinien wynosić około 1/2 prądu maksymalnego w obwodzie wyjściowym,
+a w wyniku tego napięcie U<sub>CE</sub> w punkcie pracy będzie wynosiło około
+1/2 napięcia zasilania U<sub>CC</sub>.
+
+
+
+
+<br>
+<hr>
+<pre>
+
+</pre>
+
+<a name=3></a>
+
+<CENTER>
+<TABLE cellPadding=4 class=podtytul width="60%">
+  <TBODY>
+  <TR>
+    <TD class=podtytul>Pasmo
+przenoszenia, częstotliwości graniczne wzmacniacza, wzmocnienie-sposób określania
+i pomiaru stopnia wzmocnienia</TD>
+    <TD width=23><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/main.html"><IMG 
+      align=left border=0 height=25 
+      src="img/home.gif" width=25></A><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#menu"><IMG 
+      border=0 height=25 src="img/gora.gif" 
+      width=25></A></TD></TR></TBODY></TABLE></CENTER>
+
+<br>
+<pre>
+
+</pre>
+
+<DIV>&nbsp;
+
+Definiuje
+się 3-decybelowe pasmo przenoszenia częstotliwości, w zakresie których
+amplituda wzmocnienia spada o 3 dB od wartości ustalonej K<sub>U0</sub>.Określa
+się też je jako częstotliwość &quot;spadku połowy mocy&quot; (P=U<sup>2</sup>/R,
+<center>
+<img src="img_rc/autorz30.gif">
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+rys.8
+Charakterystyka częstotliwościowa wzmacniacza
+<DIV>&nbsp; 
+<br>
+</b>
+
+
+
+czyli
+P~U<sup>2</sup>, czyli jeśli moc ma spaść o połowę, to Uwy ma spaść 1/
+<img src="img_rc/autorz31.gif">
+ razy).<br>
+<pre>
+</pre>
+
+<b>Pomiar pasma wzmacniacza : </b>
+<br>
+Schemat połączeń układu pomiarowego przedstawiono na rysunku. Należy wyznaczyć
+pasmo 3dB badanego układu wykorzystując wskaźnik poziomu napięcia wyjściowego SN6011. <br>
+
+<center>
+<img src="img_rc/autorz32.jpg"><br>
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+rys.9
+Schemat połączeń do pomiaru pasma </b>
+<DIV>&nbsp; 
+<br>
+</b>
+Poziom
+0dB na wskaźniku powinien być ustawiony dla 1 kHz. Należy ustawić największą
+czułość wskaźnika SN6011, dzięki czemu wzmacniacz może być wysterowany możliwie
+najmniejszym sygnałem, co pozwoli na lepsze przybliżenie pracy małosygnałowej
+wzmacniacza. Pomiaru częstotliwości granicznych dokonuje się przestrajając
+generator sinusoidalny aż do uzyskania spadków 3dB w zakresie dużych i małych
+częstotliwości. Częstotliwość może być mierzona na dowolnym wyjściu
+generatora. Szerokość pasma wzmacniacza oblicza się z zależności 
+<img src="img_rc/autorz33.gif"><br>Jeżeli
+nie dysponujemy odpowiednią wkładką, należy posłużyć się oscyloskopem.
+Najpierw zwiększamy częstotliwość za pomocą wskaźnika aż do uzyskania na
+oscyloskopie amplitudy napięcia równej 1/
+<img src="img_rc/autorz34.gif">
+amplitudy początkowej. Będzie to nasza częstotliwość graniczna górna. Dolną
+znajdujemy analogicznie, zmniejszając częstotliwość aż do ponownego
+uzyskania na oscyloskopie 1/
+<img src="img_rc/autorz35.gif">
+amplitudy początkowej.
+Na
+uwagę zasługuje również fakt, że iloczyn wzmocnienia napięciowego k<sub>u</sub>
+i pasma jest w przybliżeniu stały.<br>
+<pre>
+</pre>
+<b>Stopień wzmocnienia : </b>
+<br>
+
+<img src="img_rc/autorz36.gif"><br>
+<img src="img_rc/autorz37.gif"><br>
+<b>Pomiar wzmocnienia : </b><br>
+Schemat
+połączeń układu pomiarowego przedstawiono na rysunku. Po wmontowaniu elementów
+wymiennych w układzie badanego wzmacniacza (Rc oraz C2) należy zmierzyć jego
+wzmocnienie skuteczne k<sub>us</sub> mierząc napięcia składowej zmiennej na
+wejściu WE1 i wyjściu układu WY.
+
+<center>
+<img src="img_rc/autorz38.jpg">
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+
+
+Rys.
+10 Schemat połączeń do pomiaru wzmocnienia
+
+<DIV>&nbsp; 
+<br>
+</b>
+Do
+pomiaru napięć należy wykorzystać oscyloskop. Należy tak dobrać amplitudę
+napięcia sinusoidalnego z generatora SN2013, by amplituda sygnału wyjściowego
+była rzędu 200-300mV, co zapewnia spełnienie warunku pracy małosygnałowej
+wzmacniacza. Pomiarów
+należy dokonywać przy częstotliwości pośredniej pasma wzmacniacza, przykładowo
+1kHz. Może być ona mierzona przy pomocy częstościomierza, a w przypadku jego
+braku musi być odczytana z oscyloskopu. 
+<pre>
+</pre>
+<b>Częstotliwości graniczne wzmacniacza : <br></b>
+Istnieją dwie częstotliwości graniczne wzmacniacza RC
+– częstotliwość górna i dolna. My zajmiemy się w tym podpunkcie opisaniem
+górnej częstotliwości, objaśnienia dotyczące dolnej częstotliwości
+granicznej wzmacniacza znajdują się w 
+<A href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#7">punkcie 6</a>.
+
+<center>
+
+<img src="img_rc/autorz39.gif">
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+
+rys. 11 Schemat zastępczy wzmacniacza dla zakresu dużych
+częstotliwości
+<DIV>&nbsp; 
+<br>
+</b>
+
+
+
+W podzakresie dużych często­tliwości w schemacie zastęp­czym
+muszą być uwzględnione wszystkie elementy reak­tancyjne powodujące
+zmniejszanie war­tości napięcia wyjściowego przy zwiększaniu częstotliwości.
+Bę­dą to pojemności C<sub>e</sub>(zwiera składową zmienną prądu emitera (wpływa na przebieg
+charakterystyk częstotliwościowych w zakresie małych częstotliwości) i C<sub>jc</sub> (złączowa
+kolektora) mode­lujące pro­cesy gromadzenia ładunku we wnętrzu tranzystora
+bipolarnego. Uprosz­czony schemat zastępczy układu dla dużych częstotliwości
+pokazano na rysunku powyżej. Po przekształceniu schematu (dopuszczalnym tylko
+dla pracy transmisyjnej wzmacnia­cza) oraz po pominięciu pojemności o
+niewielkiej wartości, pojawiającej się na wyjściu układu (jest to równoznaczne
+z usunięciem drugiego bieguna transmi­tancji układu), można schemat zastępczy
+sprowadzić do postaci pokazanej na rysunku poniżej, gdzie: C<sub>b</sub>=C<sub>e</sub>+C<sub>jc</sub>g<sub>m</sub>R<sub>L</sub>.
+<br>
+<center>
+
+<img src="img_rc/autorz40.gif">
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+rys. 12
+Uproszczony schemat zastępczy wzmac­niacza dla zakresu dużych częstotliwości
+
+<DIV>&nbsp; 
+<br>
+</b>
+
+Z tego schematu wynika, że wartość górnej częstotliwości
+granicznej układu jest określona przez stałą czasową t pojemności C<sub>b</sub> i
+wynosi: <br><center>
+
+<img src="img_rc/autorz41.gif">
+</center>
+<br>
+<hr>
+<pre>
+</pre>
+
+
+<a name=5></a>
+
+<CENTER>
+<TABLE cellPadding=4 class=podtytul width="60%">
+  <TBODY>
+  <TR>
+    <TD class=podtytul>Schemat zastępczy wzmacniacza tranzystorowego w układzie OE oparty na modelu
+hybryd PI</TD>
+    <TD width=23><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/main.html"><IMG 
+      align=left border=0 height=25 
+      src="img/home.gif" width=25></A><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#menu"><IMG 
+      border=0 height=25 src="img/gora.gif" 
+      width=25></A></TD></TR></TBODY></TABLE></CENTER>
+
+<br>
+ Schemat ideowy wzmacniacza jest symboliczną
+reprezentacją rzeczywistego układu – za pomoca umownych symboli przedstawia
+podzespoły elektroniczne, z których jest zbudowany układ, i połączenia między
+nimi. Rodzaj użytych modeli i stopień ich komplikacji dobiera się stosownie
+do tego, jakie parametry i z jaką dokładnością trzeba wyznaczyć. Zwykle
+rezystory i kondensatory możemy trak­tować jako ele­menty zbliżone do ideal­nych,
+co w rozpa­trywanym przypad­ku stosun­kowo małych częstotliwości sygnału
+wzmacnianego jest sensowne. Tak więc rezystor rze­czywisty modeluje się
+elementem idealnym charakteryzującym się tylko rezystancją R, a kondensator
+rzeczywisty modeluje się elementem idealnym charakteryzują­cym się tylko
+pojemnością C. Ewentualne odstępstwa od idealności (zależność podstawo­wego
+parametru od napięcia, temperatury, czasu) można uwzględnić na etapie kom­putero­wej
+symulacji układu.</p>
+<center>
+          <img src="img_rc/autorz42.gif">
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+
+
+Rys. 13 Schemat zastępczy wzmacniacza z dodanym modelem źródła sygnału sterującego o sem. E<sub>g</sub>
+        i rezystancji wewnętrznej R<sub>w</sub>.
+
+<DIV>&nbsp; 
+<br>
+</b>
+
+
+Najczęściej stoso­wanym przy projektowaniu modelem tranzys­tora
+bipolar­nego jest model mieszany. Gdy
+projektuje się wzmacniacz o sto­sunkowo małej war­tości górnej często­tliwości
+gra­nicznej i przecięt­nych wyma­ganiach wartości rezys­tancji wejścio­wej
+i wyjściowej, upraszcza się pełny model tak, że pozostaje tylko źródło
+sterowane g<sub>m</sub>U<sub>b'e</sub>, konduktancja g<sub>b'e</sub> oraz
+pojemności C<sub>jc</sub> i C<sub>e</sub>. (rysunek powyżej) Element oznaczony
+na schemacie symbolem R<sub>B</sub> jest rezystorem o rezystan­cji R<sub>B</sub>=R<sub>B1</sub>||R<sub>B2</sub>,
+natomiast elementy modelu tranzystora wyznacza się z następują­cych zależności:
+r<sub>b'e</sub>=1/g<sub>b'e</sub>=b<sub>
+0</sub>
+/g<sub>eb'</sub>=25 b<sub>
+0</sub>
+/I<sub>E</sub>;&nbsp;
+g<sub>m</sub> »g<sub>eb'</sub></span>»I<sub>E</sub>/25, gdzie I<sub>E</sub> - składo­wa stała
+prądu emitera wyrażona w mA. Z przedstawionego schematu nie da się uzyskać
+prostych wzorów projektowych. Należy schemat jeszcze bardziej uprościć. W
+tym celu zakres interesujących nas częstotliwości sygnału wzmacnianego
+dzieli się na trzy podzakre­sy: małych, średnich i dużych częstotli­wości.
+Przyjmuje się, że dla sygnałów o średnich częstotliwościach żadne
+elementy reaktancyjne nie wpływają na wartość wzmocnienia napięciowego układu.
+Założenie to sprawia, że ze schematu zastępcze­go znikają wszystkie
+pojemności, przy czym pojemności C<sub>1</sub>, C<sub>2</sub> i C<sub>E</sub>
+zastępuje się zwarciami, natomiast pojemności C<sub>e</sub> i C<sub>jc</sub>
+usuwa się ze schematu (rozwarcia). Przyjmijmy również, iż R<sub>e</sub>=0,
+tzn. nie występuje lokalne ujemne sprzężenie zwrotne. Wtedy schemat zastępczy
+układu przyjmie postać przedstawioną na rysunku poniżej, gdzie: R<sub>L</sub>=R<sub>C</sub>||R<sub>O</sub>;
+R<sub>b</sub>=R<sub>B</sub>||r<sub>b'e</sub>, R<sub>g</sub>=R<sub>G</sub>+R<sub>W</sub>.
+
+
+<center>
+<img src="img_rc/autorz43.gif">
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+Rys. 14 Schemat
+zastępczy wzmacnia­cza dla zakresu średnich częstotliwo­ści.
+<DIV>&nbsp; 
+<br>
+</b>
+<hr>
+
+<pre>
+</prE>
+
+
+
+<a name=6></a>
+
+<CENTER>
+<TABLE cellPadding=4 class=podtytul width="60%">
+  <TBODY>
+  <TR>
+    <TD class=podtytul>Schemat wzmacniacza dla składowej stałej i zmiennej napięcia wejściowego</TD>
+    <TD width=23><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/main.html"><IMG 
+      align=left border=0 height=25 
+      src="img/home.gif" width=25></A><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#menu"><IMG 
+      border=0 height=25 src="img/gora.gif" 
+      width=25></A></TD></TR></TBODY></TABLE></CENTER>
+
+<br>
+
+
+
+ <center>
+<img src="img_rc/autorz44.jpg">
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+
+rys. 15 Schemat wzmacniacza dla składowej stałej
+napięcia wejściowego
+
+<DIV>&nbsp; 
+<br>
+</b>
+
+
+<centeR>
+
+<img src="img_rc/autorz45.jpg">
+
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+
+rys. 16 Schemat wzmacniacza dla składowej zmiennej
+napięcia wejściowego
+<DIV>&nbsp; 
+<br>
+</b>
+
+Ogólny schemat wzmacniacza zarówno dla składowej stałej
+jak i zmiennej napięcia wejściowego jest ten sam. Powyższe schematy różnią
+się jedynie „drobnymi” szczegółami. Dla składowej zmiennej źródło U
+jest przypięte do masy, na schemacie pojawiają się również pojemności C<sub>1</sub>
+i C<sub>2</sub>, zamiast rezystancji emitera R<sub>E</sub> mamy rezystancję<span style="mso-spacerun: yes">&nbsp;
+</span>R<sub>B</sub>, czyli rezystancję równoległa połączenia R<sub>1</sub>
+i R<sub>2</sub>. Kondensatory C<sub>1</sub> i C<sub>2</sub> separują układ od
+zewnętrznych napięć stałych oraz umożliwiają doprowadzenie sygnału do
+zacisku wejściowego tranzystora (kondensator C<sub>1</sub>) i odprowadzenie
+wzmocnionego sygnału do obciążenia (kondensator C<sub>2</sub>). W użytecznym
+zakresie częstotliwości pracy kondensatory sprzęgające C<sub>1</sub> i C<sub>2</sub>
+posiadają pomijalnie małe reaktancje i w schematach zmiennoprądowych należy
+je zewrzeć. Wtedy dla sygnałów zmiennych tranzystor obciążony jest wypadkową
+rezystancją R<sub>Lt</sub>: 
+<center>
+<img src="img_rc/autorz46.jpg">
+</center>
+<br>
+<hr>
+<pre>
+</pre>
+
+
+<a name=7></a>
+
+<CENTER>
+<TABLE cellPadding=4 class=podtytul width="60%">
+  <TBODY>
+  <TR>
+    <TD class=podtytul>Sposób
+obliczania częstotliwości dolnej wzmacniacza</TD>
+    <TD width=23><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/main.html"><IMG 
+      align=left border=0 height=25 
+      src="img/home.gif" width=25></A><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#menu"><IMG 
+      border=0 height=25 src="img/gora.gif" 
+      width=25></A></TD></TR></TBODY></TABLE></CENTER>
+
+<br>
+
+
+
+Spadek wzmocnienia przy małych częstotliwościach jest
+skutkiem wzrostu reaktancji kondensatorów C<sub>1</sub>, C<sub>2</sub> i C<sub>E</sub>.
+Najczęściej wpływy tych kondensatorów na przebieg charakterystyk częstotliwościowych
+bada się oddzielnie, tj. wyznacza się dolne częstotliwości graniczne
+wzmacniacza f<sub>1</sub>, f<sub>2</sub>, f<sub>3</sub> przy oddzielnym uwzględnieniu
+każdego każdego kondensatorów C<sub>1</sub>, C<sub>2</sub> i C<sub>E</sub>
+(gdy analizuje się wpływ jednego z kondensatorów, to pozostałe są zwarte). Z pewnym przybliżeniem dolną częstotliwość
+wzmacniacza wyznacza się z zalezności <br>
+f<sub>d</sub>
+<img src="img_rc/autorz47.gif">
+<br>
+Częstotliwości graniczne f<sub>1</sub>, f<sub>2</sub> i
+f<sub>3</sub> wyznacza się kolejno dla układów pokazanych na rysunku poniżej:<br>
+<center>
+
+<img src="img_rc/autorz48.jpg">
+<img src="img_rc/autorz49.jpg">
+<img src="img_rc/autorz50.jpg">
+
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+
+rys. 17 Modele wzmacniacza
+dla zakresu małych częstotliwości: a) C<sub>2</sub> i C<sub>E</sub>
+zwarte; b) C<sub>1</sub> i C<sub>E</sub> zwarte; c) C<sub>1</sub> i C<sub>2</sub>
+zwarte;
+
+<DIV>&nbsp; 
+<br>
+</b>
+
+
+
+Układ a) jest modelem wzmacniacza przy zwartych pojemnościach
+C<sub>2</sub> i C<sub>E</sub>. Stała czasowa <sub>
+<img src="img_rc/autorz51.gif"></sub>
+&nbsp;</span>jest to iloczyn pojemności oraz
+rezystancji widzianej z zacisków pojemności.
+<img src="img_rc/autorz52.gif">= C<sub>1</sub>(R<sub>in</sub> + R<sub>g</sub>), <br>
+gdzie R<sub>in</sub> – rezystancja wejściowa
+wzmacniacza, R<sub>g</sub> – wewnętrzna rezystancja źródła.<br>
+Pulsacja <sub>
+<img src="img_rc/autorz53.gif"></sub>
+, ale <sub>
+<img src="img_rc/autorz54.gif"></sub>
+<sub>1</sub>= 2<sub>
+<img src="img_rc/autorz55.gif"></sub>
+f<sub>1</sub>, stąd po przekształceniach otrzymujemy wzór na częstotliwość
+f<sub>1</sub><br>
+<center>
+<img src="img_rc/autorz56.gif"></sub>
+</sub>=
+<sub>
+<img src="img_rc/autorz57.gif"></sub>
+</center>
+<br>
+W układzie b) stała czasowa <sub>
+<img src="img_rc/autorz58.gif"></sub>
+, z której wynika częstotliwość graniczna f<sub>2</sub>, jest równa
+iloczynowi pojemności C<sub>2</sub> i dołączonej do niej sumarycznej
+rezystancji w oczku wyjściowym (podobnie jak <sub>
+<img src="img_rc/autorz59.gif"></sub>&nbsp;</span>w układzie a). Zatem częstotliwość<br>
+
+<sub>
+<img src="img_rc/autorz60.gif"></sub>&nbsp;</span>= <sub>
+<img src="img_rc/autorz61.gif"></sub>
+<br>
+W układzie c) pulsacja <br>
+
+<img src="img_rc/autorz62.gif">
+<img src="img_rc/autorz63.gif"><br>
+<pre>
+</pre>
+Ale
+<img src="img_rc/autorz64.gif">
+<sub>3</sub>= 2
+<img src="img_rc/autorz65.gif">
+f<sub>3</sub>, stąd<br>
+<center>
+<img src="img_rc/autorz66.gif">
+&nbsp;</span>= 
+<img src="img_rc/autorz67.gif">
+</center>
+<br>
+
+Częstotliwość graniczna f<sub>3</sub> zależy nie od
+stałej czasowej R<sub>E</sub>C<sub>E</sub>, a zazwyczaj od znacznie mniejszego
+iloczynu C<sub>E</sub> i rezystancji wyjściowej tranzystora od strony emitera (<sub>
+<img src="img_rc/autorz68.gif"></sub>
+. Wynika stąd konieczność stosowania kondensatorów C<sub>E</sub> o dużych
+pojemnościach (setki mikrofaradów dla zakresu akustycznego). Zazwyczaj też częstotliwość
+f<sub>3</sub> – jako najmniejsza – decyduje o dolnej częstotliwości
+granicznej całego wzmacniacza.
+<br>
+<b>Dygresja :</b>
+<br>
+Dla lepszego zrozumienia sposobu wyprowadzania stałej czasowej dla częstotliwości dolnej posłużmy sie znanym 
+nam już schematem zastępczym wzmacniacze przedstawionego na rysunku poniżej : <br>
+<center>
+<img src="img_rc/autorz42.gif">
+</center>
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+Rys 17a Schemat zastępczy wzmacniacza dla niskich częstotliwości
+
+<DIV>&nbsp; 
+<br>
+</b>
+Dla niskich częstotliwości możemy rozewrzeć pojemności C<sub>jc</sub>, C<sub>e</sub> ponieważ nie wpływają one na częstotliwość graniczną.<br>
+Rozwieramy źródło prądu. <br>
+Zwieramy źródło napięcia.<br>
+Otrzymujemy układ jak na poniższym rysunku : <br>
+<center>
+<img src="img_rc/autorz67a.jpg"><P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+Rys 17b Układ z którek wyprowadza sie stałą czasową
+<DIV>&nbsp; 
+<br>
+</b>
+Otrzymujmy układ RC znany z zajęć fizyki i zgodnie z wzorem : <img src="img_rc/autorz52.gif">=R*C, orzymujemy : <br>
+<centern>
+<img src="img_rc/autorz52.gif"> = C<sub>1</sub>*(R<sub>g</sub> + R<sub>w</sub> + ((R<sub>e</sub>||R<sub>E</sub>)+r<sub>be</sub>)||R<sub>E</sub><br>
+gdzie || oznacza równoległe połączenie rezystorów.
+
+
+
+
+<hr>
+<pre>
+
+</pre>
+
+<a name=8></a>
+
+<CENTER>
+<TABLE cellPadding=4 class=podtytul width="60%">
+  <TBODY>
+  <TR>
+    <TD class=podtytul>Sposób pomiaru rezystancji
+wejściowej i wyjściowej wzmacniacza</TD>
+    <TD width=23><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/main.html"><IMG 
+      align=left border=0 height=25 
+      src="img/home.gif" width=25></A><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#menu"><IMG 
+      border=0 height=25 src="img/gora.gif" 
+      width=25></A></TD></TR></TBODY></TABLE></CENTER>
+
+<br>
+
+
+
+a) pomiar rezystancji wejściowej<br>
+Rezystancje wejściową wzmacniacza mierzy się
+metodą pośrednią, stosując na jego wejściu szeregowy rezystor R<sub>S</sub>.
+Następnie mierzymy napięcie wyjściowe przy wyłączonym oporniku R<sub>S</sub>
+(otrzymujemy Uwy1), a potem napięcie wyjściowe przy włączonym rezystorze R<sub>S</sub>(otrzymujemy Uwy2). Rezystancję wejściową wzmacniacza można obliczyć
+na podstawie zależności :<br>
+
+<img src="img_rc/autorz69.gif"> gdzie : 
+<img src="img_rc/autorz70.gif">.<br>
+
+<img src="img_rc/autorz71.gif"><br>
+
+<img src="img_rc/autorz72.gif"><br>
+<pre>
+</pre>
+
+b) pomiar rezystancji wyjściowej<br>
+Aby wyznaczyć rezystancję wyjściową R<sub>wy</sub> można wyjście
+wzmacniacza potraktować jako źródło napięcia o określonej rezystancji wewnętrznej.
+Mierząc napięcie wyjściowe nieobciążonego wzmacniacza określa się wielkość
+siły elektromotorycznej tego źródła 
+<img src="img_rc/autorz73.gif">
+. Obciążając to źródło znaną rezystancją R<sub>o</sub> doprowadza się
+do podziału tej siły na spadki napięcia na rezystancji wewnętrznej i dołożonej.
+Mierząc spadek napięcia na rezystancji obciążenia (wyjściu wzmacniacza) z
+proporcji można wyliczyć rezystancję wewnętrzną źródła (rezystancję wyjściową
+wzmacniacza). <br><center>
+<img src="img_rc/autorz74.gif">
+</center><br>Dokonuje się tego w sposób następujący. Mianowicie
+reguluje się potencjometrem R<sub>o</sub>, aż zaobserwujemy spadek napięcia
+wyjścia do połowy wartości początkowej(jaką miało przed dołączeniem R<sub>o</sub>).
+<br>
+<hr>
+
+<pre>
+
+</pre>
+<a name=9></a>
+
+<CENTER>
+<TABLE cellPadding=4 class=podtytul width="60%">
+  <TBODY>
+  <TR>
+    <TD class=podtytul>Wzmacniacz
+RC z tranzystorem unipolarnym</TD>
+    <TD width=23><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/main.html"><IMG 
+      align=left border=0 height=25 
+      src="img/home.gif" width=25></A><A 
+      href="http://galaxy.uci.agh.edu.pl/~maziarz/LabPE/rc.html#menu"><IMG 
+      border=0 height=25 src="img/gora.gif" 
+      width=25></A></TD></TR></TBODY></TABLE></CENTER>
+
+<br>
+
+
+
+Tranzystory unipolarne – głównie typu FET – są
+stosowane we wzmacniaczach małych częstotliwości znacznie rzadziej niż
+tranzystory bipolarne. Wykorzystuje się przede wszystkim takie właściwości
+tranzystorów unipolarnych jak: bardzo duża impedancja wejściowa (i znikomy prąd
+bramki)), mniejsza nieliniowość charakterystyki przejściowej oraz małe szumy
+przy dużych impedancjach źródła sygnału. Niekorzystne w stosunku do
+tranzystorów bipolarnych właściwości to: mniejsza transkonduktancja – i w
+związku z tym mniejsze wzmocnienie napięciowe – większy na ogół pobór prądu
+oraz niezbyt duże pole wzmocnienia tranzystorów FET.<br>
+Praktyczne zastosowanie w zakresie m.cz. znalazły dwie
+konfiguracje o dużej impedancji wejściowej: wspólnego źródła (WS) i wspólnego
+drenu (WD). Zasadnicze właściwości wzmacniaczy w tych konfiguracjach są
+podobne do właściwości układów WE i WK, również ogólna konstrukcja
+pojedynczego stopnia wzmacniacza jest zbliżona. Różnice są wynikiem innych
+metod realizacji obwodu polaryzacji bramki.<br>
+Ze względu na dużą impedancję wejściową układów
+unipolarnych nie określa się dla nich wzmocnień prądowych ani wzmocnień
+mocy (zwykłych i skutecznych), gdyż k<sub>i</sub> -&gt; <sub>
+<img src="img_rc/autorz75.gif"></sub>
+, k<sub>p</sub> -&gt; <sub>
+<img src="img_rc/autorz76.gif"></sub>
+. Impedancja wejściowa ma charakter pojemnościowy i jest określona przez obwód
+polaryzacji bramki i pojemność wejściową tranzystora.
+Typowe układy dyskretnych wzmacniaczy ze sprzężeniem
+pojemnościowym są pokazane na rysunku poniżej.<br>
+
+<center>
+
+<img src="img_rc/autorz77.jpg">
+ 
+<img src="img_rc/autorz78.jpg">
+ 
+<img src="img_rc/autorz79.jpg">
+</center>
+<P align=center><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: PL; mso-bidi-language: AR-SA"><B 
+style="mso-bidi-font-weight: normal">
+
+rys.
+18 Przykłady wzmacniaczy RC z tranzystorem unipolarnym: a),
+b) w konfiguracji WS; c) w konfiguracji WD
+<DIV>&nbsp; 
+<br>
+</b>
+
+
+Małosygnałowy model tranzystora polowego ma strukturę
+podobną do modelu hybryd-<sub>
+<img src="img_rc/autorz80.gif"></sub>
+ tranzystora bipolarnego, dlatego zasadniczo wszystkie zależności,
+wyprowadzone w poprzednich punktach, mogą być formalnie przeniesione na
+przypadek wzmacniaczy z tranzystorami FET.
+<pre>
+</pre>
+<hr>
+
+
+</body>
+
+</html>
