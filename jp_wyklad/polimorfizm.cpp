@@ -2,25 +2,15 @@
 
 class czlowiek{
 	public:
-		virtual void show() = 0;
-
-		void _show(){
-			std::cout << "non virtual jestem czlowiekiem" << std::endl;
-		}
+		virtual void show() {std::cout << "virtual jestem czlowiekiem" << std::endl;};
+		void _show(){std::cout << "non virtual jestem czlowiekiem" << std::endl;}
 
 };
 
 class gowno : public czlowiek{
 	public:
-		void show(){
-
-			std::cout << "jestem gownem ale tez czlowiekiem" << std::endl;
-		}
-		void _show(){
-		
-			std::cout << "non virtual jestem gownem" << std::endl;
-		
-		}		
+		virtual void show(){std::cout << "jestem gownem ale tez czlowiekiem" << std::endl;}
+		void _show(){std::cout << "non virtual jestem gownem" << std::endl;}		
 
 };
 
@@ -40,8 +30,8 @@ int main(){
 
 	czlowiek* czl = new czlowiek;
 	gowno* michal = new gowno;
-	elon* musk = new elon;
-	czlowiek** tab = new czlowiek*[3];
+	//elon* musk = new elon;
+	czlowiek** tab = new czlowiek*[2];
 	/*
 	czl->show();
 	czl->_show();
@@ -55,11 +45,12 @@ int main(){
 
 	tab[0] = czl;
 	tab[1] = michal;
-	tab[2] = musk;
+	//tab[2] = musk;
 	
-	for (int i = 0 ; i < 3; i ++){
+	for (int i = 0 ; i < 2; i ++){
 		tab[i]->show();
 		tab[i]->_show();
+		std::cout << "\n";
 	}	
 
 return 0;
