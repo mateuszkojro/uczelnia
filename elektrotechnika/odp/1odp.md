@@ -72,19 +72,19 @@ Przepuszczone zostaje przez nie niebieskie światło LED, które jest zamieniane
 28. ISSUE: nie wiem czy tak jak opisane na slajdzie 100 w pdfie  tranzystor bipolarny - 3 warstwy przewodnika o roznym typie przewodnictwa , niewielki prad plynacy pomiedzy baza i emiterem steruje wiekszym pomiedzy emiterem a kolektorem sa 2 rodzaje npn i pnp ISSUE: wiecej o zasadzie dzialania wiki jest spoko
 29. TODO: zasada dzialania tranzystora J-FET - tranzystor polowy zlaczony HARD
 30. TODO: zasada dzialania tranzystora MOS - 
-Tranzystory MOSFET działają tak samo, jak JFET, ale ich bramka jest elektrycznie odizolowana od przewodzącego kanału.
-Tranzystor MOS polaryzuje się tak, żeby jeden rodzaj nośników (nie ma nośników większościowych i mniejszościowych – elektrony w kanale typu N, dziury w kanale typu P) płynął od źródła do drenu.
+	* Tranzystory MOSFET działają tak samo, jak JFET, ale ich bramka jest elektrycznie odizolowana od przewodzącego kanału.
+	* Tranzystor MOS polaryzuje się tak, żeby jeden rodzaj nośników (nie ma nośników większościowych i mniejszościowych – elektrony w kanale typu N, dziury w kanale typu P) płynął od źródła do drenu.
 
-Wyróżnia się dwa zakresy pracy:
-zakres nienasycenia (liniowy, triodowy),
-zakres nasycenia (pentodowy).
-Zakres pracy tranzystora determinuje napięcie dren-źródło – jeśli jest ono większe od napięcia nasycenia, wówczas tranzystor znajduje się w zakresie nasycenia.
+	* Wyróżnia się dwa zakresy pracy:
+	* zakres nienasycenia (liniowy, triodowy),
+	* zakres nasycenia (pentodowy).
+	* Zakres pracy tranzystora determinuje napięcie dren-źródło – jeśli jest ono większe od napięcia nasycenia, wówczas tranzystor znajduje się w zakresie nasycenia.
 31. Wzmacniacz małosygnałowy w połączeniu OE - Wzmacniacze napięciowe małych sygnałów odznaczają się tym, że pracujące w nich tranzystory mogą być uważane za elementy liniowe i opisane za pomocą parametrów różniczkowych, dopuszczalne zaś moce napięcia i prądy tranzystorów nie są w pełni wykorzystane. We wzmacniaczach napięciowych małej częstotliwości tranzystory pracują z reguły w układzie wspólnego emitera /OE/, ponieważ ten układ odznacza się dużym wzmocnieniem napięciowym i prądowym oraz zbliżonymi do siebie wartościami rezystancji wejściowej i wyjściowej.
 32. Właściwości wzmacniaczy w połączeniu OE, OC, OB - 
 	* Wspólny kolektor (“OC”)  - jeden z trzech podstawowych układów wzmacniaczy na tranzystorach bipolarnych.
-Zasadniczą cechą tego rodzaju wzmacniaczy jest to, że wzmacniane napięcie sygnału wejściowego podawane jest pomiędzy bazę a kolektor tranzystora, natomiast sygnał po wzmocnieniu odbierany jest spomiędzy kolektora a emitera. Kolektor jest więc "wspólny" dla sygnałów wejściowego i wyjściowego - stąd nazwa układu.
+	* Zasadniczą cechą tego rodzaju wzmacniaczy jest to, że wzmacniane napięcie sygnału wejściowego podawane jest pomiędzy bazę a kolektor tranzystora, natomiast sygnał po wzmocnieniu odbierany jest spomiędzy kolektora a emitera. Kolektor jest więc "wspólny" dla sygnałów wejściowego i wyjściowego - stąd nazwa układu.
 	* Wspólny emiter ("OE") - jeden z trzech podstawowych układów wzmacniaczy na tranzystorach bipolarnych.
-Zasadniczą cechą tego rodzaju wzmacniaczy jest to, że wzmacniane napięcie sygnału wejściowego podawane jest pomiędzy bazę a emiter tranzystora, natomiast sygnał po wzmocnieniu odbierany jest spomiędzy kolektora a emitera. Emiter jest więc "wspólny" dla sygnałów wejściowego i wyjściowego - stąd nazwa układu. Ponieważ sygnał wyjściowy zbierany jest z kolektora, wzmacniacz w układzie wspólnego emitera odwraca polaryzację sygnału podawanego na wejście.
+	* Zasadniczą cechą tego rodzaju wzmacniaczy jest to, że wzmacniane napięcie sygnału wejściowego podawane jest pomiędzy bazę a emiter tranzystora, natomiast sygnał po wzmocnieniu odbierany jest spomiędzy kolektora a emitera. Emiter jest więc "wspólny" dla sygnałów wejściowego i wyjściowego - stąd nazwa układu. Ponieważ sygnał wyjściowy zbierany jest z kolektora, wzmacniacz w układzie wspólnego emitera odwraca polaryzację sygnału podawanego na wejście.
 	* Wspólna baza (“OB”) - jeden z trzech podstawowych układów wzmacniaczy na tranzystorach bipolarnych. Zasadniczą cechą tego rodzaju wzmacniaczy jest to, że wzmacniane napięcie sygnału wejściowego podawane jest pomiędzy bazę a emiter tranzystora, natomiast sygnał po wzmocnieniu odbierany jest spomiędzy bazy i kolektora. Baza jest więc "wspólna" dla sygnałów wejściowego i wyjściowego - stąd nazwa.
 32. Zniekształcenia harmoniczne sygnału we wzmacniaczach - efekt przetwarzania sygnału przez układ lub system o nieliniowej charakterystyce przejściowej. Typowo objawiają się one obecnością dodatkowych składowych harmonicznych w widmie sygnału. Te dodatkowe składowe są zazwyczaj klasyfikowane jako zniekształcenia harmoniczne lub zniekształcenia intermodulacyjne
 33. TODO: Rola ujemnego sprzężenia zwrotnego na zmniejszenie wpływu fluktuacji temperatury na zmiany prądu kolektora 
