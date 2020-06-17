@@ -30,7 +30,6 @@
         prąd upływowy – IU, prąd płynący przez kondensator, przy doprowadzonym stałym napięciu;
     
         temperaturowy współczynnik pojemności – αC, określa względną zmianę pojemności, zależną od zmian temperatury.
-    ```
 8.  FIXME: Srawdzic wzory pojemnosc
     * szeregowo - 1/fz = 1/f1 + 1/f2;
     * rownolegle - fz = f1+ f2
