@@ -16,7 +16,6 @@ Gdy zbudujemy szeregowy obwód RLC, impedancja kondensatora i cewki mają przeci
 
 ### Wspolczynnik transmisjii
 Zależność współczynnika transmisji od częstotliwości dla obwodu RLC wyraża się wzorem: ![wzor_rlc](wzor_rlc.png)
-
 # Metody
 Wspólczynnik transmisjii możemy zmierzyc używając oscyloskopu i generatora sygnału sinusoidalnego.
 Kanał 1 oscyloskopu podłączamy do wejścia obwodu, kanał 2 natomiast do  wyjścia. Mierzymy nastepnie amplitudy tych sygnałów.
@@ -25,19 +24,15 @@ Kanał 1 oscyloskopu podłączamy do wejścia obwodu, kanał 2 natomiast do  wyj
 ![uklad1](uklad_rc.png)
 ## RLC:
 ![uklad2](uklad_rlc.png)
+
 # Analiza wynikow
 ## Zależność wspólczynnika transmisji od częstotliwości w układzie RC
 
 Porównując zmierzone wartości z wartościami obliczonymi ze wzoru, otrzymujemy bardzo podobne krzywe. Ich różnice są spowodowane przez niedokładności pomiarowe oscyloskopu, niedokładności generatora sygnału oraz przez różne od nominalnych wartości elementów elektronicznych.
 Udawadnia to działanie obwodu RC jako filtra dolnoprzepustowego, który przepuszcza sygnały o niskiej częstotliwości, a te o wyższej tłumi.
-![wykresRC](wykresRC.png) 
+![wykresRC](wykresRC.png)
 
 ## Zależność wspólczynnika transmisji od częstotliwości w układzie RLC
 W układzie RLC także zmierzone wartości i wartości obliczone ze wzoru są podobne. Różnice są spowodowane przez niedokładności pomiarowe oscyloskopu, niedokładności generatora sygnału oraz przez różne od nominalnych wartości elementów elektronicznych.
-Udawadnia to działanie obwodu RLC jako filtra wszystkich oprócz jednej częstotliwości. 
-![wykresRLC](wykresRLC.png)
-
-
-
-
+Udawadnia to działanie obwodu RLC jako filtra wszystkich oprócz jednej częstotliwości.
 ![wykresRLC](wykresRLC.png)
