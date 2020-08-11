@@ -133,10 +133,45 @@ W zwiazku z tym struktura $ (K, \oplus ,\circ) $ jest cialem wzgledem dzialan $ 
 \paragraph{Def Pierscien (nieprzemienny)}
 Pierścieniem nieprzemiennym nazywamy zbior P bedacy grupa Abelowa wzgledem dzialania dodawania $\oplus$ o elemencie neutralnym $\theta$ w którym spelnione jest Prawo lacznosci mnozenia $\circ$ przy czym zachodza oba prawa rodzielnosci
 \begin{equation}
-    a \circ (b \oplus c) = a \circ b \oplus a \circ \c \ \text{oraz} \ (a \oplus b) \circ c = a \circ c \oplus b \circ c
+    a \circ (b \oplus c) = a \circ b \oplus a \circ \ c \ \text{oraz} \ (a \oplus b) \circ c = a \circ c \oplus b \circ c
 \end{equation}
 \paragraph{Def Pierscien (przemienny)}
 jezeli w zbiorze P zachodzi takze prawo przemiennosci to pierscien jest przemienny
 \section{Cialo liczb zespoloncyh}
 \subsection{Definicja}
+Cialo liczb zespoloncyh:
+\begin{equation}
+    C=(R\times R, +', * )
+\end{equation}
+\subsection{Postac algebraiczna}
+Kazda liczbe zespolona $ z = (a,b) \in C $ mozemy przedstawic  w postacialgebraicznej
+\begin{equation}
+z = a + b * i , \ i = \sqrt{-1}
+\end{equation}
+\subsection{Postac trygonometryczna}
+Licze zespolona $z = a + bi \ne 0$ moze byc zapisana w postaci geometrycznej:
+\begin{equation}
+    z = |z|(cos(\phi_0) + i\sin(\phi_0)) \ \text{gdzie} \ \phi_0 = \text{Arg}(z)
+\end{equation}
+\paragraph{Wzor de Moivre'a}
+jezeli $    z = |z|(cos(\phi_0) + i\sin(\phi_0))$ to:
+\begin{equation}
+    z^{n} = |z|^{n}(\cos(n\phi)+ i\sin(n\phi)) \ \forall_{n \in N}
+\end{equation}
+\paragraph{Pierwiastki Zespolone}
+jezeli $    z = |z|(cos(\phi_0) + i\sin(\phi_0))$ oraz $w \in C$, to rownanie $w^{n} = z$ ma dokladnie n rozwiazan:
+\begin{equation}
+    w = z_{k} \ (k = 0,1, \ldots , n -1)
+\end{equation}
+pierwiastkow zespoloncyh stopnia $n$ z liczby zespolonej $z$ gdzie:
+\begin{equation}
+z_{k} = \sqrt[n]{|z|}(\cos((\phi + 2k\pi)/n)+ i sin((\phi + 2k\pi)/n))
+\end{equation}
+\subsection{Interpretacja geometryczna}
+%TODO
+Do zrobienia \ldots
+\subsection{Postac Eulera liczby zespolonej}
+\begin{equation}
+    z = |z|e^{i\phi}, \text{gdzie} \ \phi = \text{arg}(z)
+\end{equation}
 \end{document}
