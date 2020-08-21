@@ -11,25 +11,13 @@ void randomize(int* tab1 ,int* tab2 , int size);
 int main(){
 srand(time(NULL));
 int n;
-printf("ile liczb mam posortowac?\n");
-std::cin >> n;
-
+n= 10000;
 int* tab1 = new int[n];
 int* tab2 = new int[n];
 randomize(tab1,tab2,n);
-printf("wylosowane liczby: \n"); 
-show(tab1,n);
-printf("\n");
 
-printf("BUBBLE SORT:\n wynik:\n");
 int c_bubble = bubble_sort(tab1,n);
-show(tab1,n);
-printf("liczba porownan: %d",c_bubble);
-printf("\n\n");
-printf("INSERTION SORT:\n wynik:\n");
 int c_insert = insert_sort(tab2,n);
-show(tab2,n);
-printf("liczba porownan: %d\n",c_insert);
 }
 
 void randomize(int* tab1 ,int* tab2 , int size){

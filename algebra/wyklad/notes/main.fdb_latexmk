@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1597174226 "/home/mateusz/workspace/uczelnia/algebra/notes/main.tex" "/home/mateusz/workspace/uczelnia/algebra/notes/main.pdf" "main" 1597174226
-  "/home/mateusz/workspace/uczelnia/algebra/notes/main.aux" 1597174226 3717 88c7c3829a86db07e6ecca38a79e2946 ""
-  "/home/mateusz/workspace/uczelnia/algebra/notes/main.tex" 1597174225 7661 7412b7d527fe1be947f705bb74c47b23 ""
+["pdflatex"] 1598007406 "/home/mateusz/workspace/uczelnia/algebra/wyklad/notes/main.tex" "/home/mateusz/workspace/uczelnia/algebra/wyklad/notes/main.pdf" "main" 1598007406
+  "/home/mateusz/workspace/uczelnia/algebra/wyklad/notes/main.aux" 1598007406 7246 de5666623c2e5341284bc49bd7dbdba6 ""
+  "/home/mateusz/workspace/uczelnia/algebra/wyklad/notes/main.tex" 1598007405 15054 5bc4cb3c8e9417242d4038406edf57b9 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1591545468 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1591545468 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1591545468 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -50,11 +50,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1593953022 334180 163417853e75f7c89e92e140d6d6e976 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1593953022 2514042 b5843ed7a676f225cd2441c470e06558 ""
-  "main.aux" 1597174226 3717 88c7c3829a86db07e6ecca38a79e2946 "pdflatex"
-  "main.tex" 1597174225 7661 7412b7d527fe1be947f705bb74c47b23 ""
+  "main.aux" 1598007406 7246 de5666623c2e5341284bc49bd7dbdba6 "pdflatex"
+  "main.tex" 1598007405 15054 5bc4cb3c8e9417242d4038406edf57b9 ""
   (generated)
-  "main.pdf"
-  "/home/mateusz/workspace/uczelnia/algebra/notes/main.log"
-  "main.aux"
   "main.log"
-  "/home/mateusz/workspace/uczelnia/algebra/notes/main.pdf"
+  "/home/mateusz/workspace/uczelnia/algebra/wyklad/notes/main.pdf"
+  "main.aux"
+  "main.pdf"
+  "/home/mateusz/workspace/uczelnia/algebra/wyklad/notes/main.log"

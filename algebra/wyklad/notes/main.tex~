@@ -5,6 +5,9 @@
 \author{Mateusz Kojro}
 \begin{document}
 \maketitle
+%
+% Wiadomosci wstepne
+%
     \section{Wiadomosci wstepne}
     \subsection{Zbiory}
     \paragraph{Def Zbior pusty:}
@@ -89,6 +92,10 @@ inaczej
 \end{equation}
 \paragraph{Def Identycznosc}
 Odwzorowanie zbioru A w siebie w postaci $ Id_A(a) =a $
+\clearpage
+%
+% Struktury algebraiczne
+%
 \section{Struktury Algebraiczne}
 \subsection{Grupy}
 \paragraph{Def Zamknietosc wzoru wzgledem dzialania $ \oplus $}
@@ -137,6 +144,10 @@ Pierścieniem nieprzemiennym nazywamy zbior P bedacy grupa Abelowa wzgledem dzia
 \end{equation}
 \paragraph{Def Pierscien (przemienny)}
 jezeli w zbiorze P zachodzi takze prawo przemiennosci to pierscien jest przemienny
+\clearpage
+%
+% Liczby zespolone
+%
 \section{Cialo liczb zespoloncyh}
 \subsection{Definicja}
 Cialo liczb zespoloncyh:
@@ -148,6 +159,15 @@ Kazda liczbe zespolona $ z = (a,b) \in C $ mozemy przedstawic  w postacialgebrai
 \begin{equation}
 z = a + b * i , \ i = \sqrt{-1}
 \end{equation}
+\subsection{Wlasnosci}
+\begin{itemize}
+    \item jezeli $z = a+bi$ to $|z| = \sqrt{a^{2}+b^{2}}$
+    \item jezeli $z = a+bi$ to $\phi = arg(z)$ jezeli \begin{itemize}
+        \item $cos{\phi} = \frac{a}{|z|}$
+        \item $sin{\phi} = \frac{b}{|z|}$
+        \item jezeli $\phi < 2\pi$ to argument glowny ozn $Arg(z)$
+    \end{itemize}
+\end{itemize}
 \subsection{Postac trygonometryczna}
 Licze zespolona $z = a + bi \ne 0$ moze byc zapisana w postaci geometrycznej:
 \begin{equation}
@@ -174,4 +194,158 @@ Do zrobienia \ldots
 \begin{equation}
     z = |z|e^{i\phi}, \text{gdzie} \ \phi = \text{arg}(z)
 \end{equation}
+\clearpage
+\section{Iloczyn Skalarny}
+\subsection{Iloczyn Skalarny}
+Przyporzadkowanie $V \times V \ni \ \rightarrow <x,y> \ \in K$ nazywamy Iloczynem Skalarnym wektorow x , y
+\paragraph{Przestrzen Euklidesowa (Unitarna)}
+natomiast to para $(V,<*,*>)$ nad cialem skalarow $K$
+\paragraph{jezeli:} $V$ bedzie przestrzenia wektorowa nad cialem K $(K \in R , K \in C \ldots)$ kazdej parze wektorow $x, y$ przyporzadkujemy skalar $< x, y >$ taki ze:
+\begin{itemize}
+    \item $ <x, y > = <y,x> $
+    \item $ < \alpha x, y> = \alpha \ , \ \forall_{\alpha \in K} $
+    \item $ <x + x', y> = <x,y> + <x' , y>$
+    \item $<x,x> \ge 0$ , przy czym $<x,x> = 0 \Leftrightarrow x = 0$
+\end{itemize}
+
+\paragraph{Przy czym wyrozniamy formy: - uzupelnic warunki form}
+\begin{itemize}
+    \item Forma dwuliniowa symetryczna (hermitowska)
+    \item Forma kwadratowa
+    \item Forma kwadratowa dodatnio okreslona
+\end{itemize}
+Dlatego iloczynem Skalarnym nazywa sie dowolna forme dwuliniowa symetryczna lub hermitowska dodatnio okreslona
+\subsection{Twierdzenia}
+\paragraph{Tweirdzenie Sylwestra:}Macierz kwadratowa $A$ jest dodatnio okreslona jezeli wszystkie jej minory glownwe ostatnich elemntow glownej przekatnej sa dodatnie
+
+\paragraph{Def Slad Macierzy M ($Tr(M)$)} jest suma jej elementow diagonalnych $m_{ii}$
+\paragraph{Def Długosc wektora} jezeli $x \in (V, <*,*>)$ to dlugosc wektora to:
+\begin{equation}
+    |x| = \sqrt{<x,x>}
+\end{equation}
+\paragraph{Def Kat dwoch wektorow} jezeli wektory $x,y \in E = (V,<*,*>)$ to $\phi$ jest katem okreslonym:
+\begin{equation}
+    \phi = \arccos(\frac{<x,x>}{|x||x|})
+\end{equation}
+\paragraph{Def Wektory ortagonalne} wektory $ x,y\in (V, <*,*>) $ nazywamy ortagonalnymi jezeli:
+\begin{equation}
+    <x,y> = 0
+\end{equation}
+jezeli wektor jest zerowy to jest ortagonalny do kazdego w $E$
+\paragraph{Def Odleglosc wektorow}
+Odlegloscia wektorow $x,y \in E = (V, <*,*>)$ nazywamy liczbe d:
+\begin{equation}
+    d = |x -y |
+\end{equation}
+\paragraph{Def jakis dziwny wniosek o wektorach}
+\paragraph{Def Unormowanie niezerowgo wektora} to operacja na $x \in E = (V,<*,*>)$ nazywamy operacje dazaca do utworzenia wersora:
+\begin{equation}
+    \hat{x} = \frac{x}{|x|} \ \text{,taki ze } \ |\hat{x}| = 1
+\end{equation}
+\paragraph{Twierdzenie Pitagorasa (w ogolnych przestrzeniach wektorowych)} dla ortagonalnych parami wektorow $x,y,z,\ldots ,w\in E=(V, <*,*>)$ zachodzi:
+\begin{equation}
+    |x+y+z+\ldots +w|^{2} = |x|^{2} + |y|^{2} + |z|^{2} + \ldots + |w|^{2}
+\end{equation}
+\paragraph{Nierownosc Schwartza}
+dla dowolnych wektorow $x,y \in E = (V,<*,*>)$ zachodzi:
+\begin{equation}
+    <x,y>^{2} \ \le \ <x,x> <y,y>
+\end{equation}
+Z nierownosci Schwartza wynika nierownosc trojkata
+\begin{equation}
+    |x+y|\le|x|+|y|
+\end{equation}
+\paragraph{Ortagonalne bazy przestrzeni Euklidesa}
+Niezerowe wektory $\{b_{1}, b_{2}, \ldots ,b_{n}\}$ n wymiarowej przestrzeni Euklidesowej $E = (V,<*,*>)$ tworza baze zwana:
+\begin{itemize}
+    \item Ortagonalna: jezeli sa parami prostopadle
+    \item Orto-normalna: gdy sa parai prostopadle i sa wersorami
+\end{itemize}
+mamy wtedy:
+\begin{equation}
+    <b_{k}, b_{p}> = \delta_{kp} \ (k,p = 1,2, \ldots , n)
+\end{equation}
+\subparagraph{Wnioski:}
+
+\begin{itemize}
+    \item W bazie ortagonalnej $\{b_{1}, b_{2}, \ldots ,b_{n}\}$ wspolrzedne wektora $x_{k}$ wektora $x$ sa w postaci:
+    \begin{equation}
+       (*) \ \ x_{k} = <x, b_{k}> / <b_{k}, b_{k}>
+    \end{equation}
+    i tworza rzuty wektora $x$ na kolejne wektory bazy
+    \item W przestrzeni Euklidesowej z baza orto-normalna Iloczyn Skalarnyjest w postaci standardowej:
+    \begin{equation}
+        <x,y> = x_1 y_1 + x_2 y_2 + x_3 y_3 + \ldots + x_n y_n
+    \end{equation}
+    \subparagraph{} gdzie
+    $$n = dim V$$
+    Istotnie Wektory $x$ i $y$ sa liniowymi kombinacjami wektorow bazy i teza wynika z liniowosci iloczynu skalarnego wobec relacji $(*)$
+\end{itemize}
+
+
+\paragraph{Algorytm ortagonalizacji Grama-Schmidta}
+Kazda $n$ wymiarowa przestrzen Euklidesowa posiada baze Ortagonalna
+\subparagraph{Wnioski:}
+\begin{itemize}
+    \item Wiersze dowolnej macierzy ortagonalnej stopnia $k$ stanowia baze ortonormalna przestrzeni wektorowej $R^{k}$
+    \item Wiersze macierzy kwadratowej stopnia $k$ ktora spelnia $AA^{T} = D$ gdzie macierz D jest pewna macierza diagonalna stanowia baze ortagonalna przestrzeni wektorowej $R^{k}$
+\end{itemize}
+\section{Przestrzen Euklidesowa}
+\paragraph{Wektor ortagonalny do p.p.w.}
+Jezeli $ E = (V, <*,*>) $ bedzie przestrzenia euklidesowa, a $ V_{1}$
+podprzestrzenia wektorowa przestrzeni $V$ to wektor $h \in V$ nazywamy wektorem ortogonalnym do podprzestrzeni przestrzeni wektorowej $V_1$, jeśli jest on ortogonalny do każdego wektora
+\begin{equation}
+    y \subset V1: <h, y> = 0
+\end{equation}
+\subparagraph{Wnioski}
+Aby wektor $h\in V$ byl ortagonalny do podprzestrzeni przestrzeni wektorowej $V_1$ wystarczy zeby byl ortagonalny do wszystkich  wektorow dowolnej bazy przestrzeni wektorowej $V_1$ -- kompletnie tego nie ogarniam (wyklad 2b str 1)
+
+\paragraph{Def Podprzestrzenie ortagonalne} $V_1$ i $V_2$ w przestrzeni Euklidesowej $E = (V,<*,*>)$ nazywamy ortagonalnymi jezeli dowolne:
+\begin{equation}
+    x \ in V_1 \ , \ y \in V_2
+\end{equation}
+sa Ortagonalne
+\paragraph{Def Dopelnienie ortagonalne podprzestrzeni przestrzeni wektorowej}
+to zbior wszystkich wektorow przestrzeni wektorowej V ortagonalnych do podprzestrzeni przestrzeni wektorowej $V_1 \subset V $ oznaczamy:
+\begin{equation}
+    V_1^{\perp}
+\end{equation}
+\paragraph{Def Rzut wektora na podprzestrzen przetrzedni wektorowej}
+jezeli $V_1$ jest p.p.w przestrzeni Euklidesowej E = (V, <*,*>) i dla kazdego wektora $y \notin V_1$ wektor $y_0 \in V_1$ taki ze wektor $h = y - y_0$ jest ortagonalny do $V_1$ to wektor $y_0$ jest rzutem wektora $y$ na $V_1$
+\section{Macierze}
+\subsection{Dodawanie (odejmowanie)}
+\begin{equation}
+    \begin{bmatrix}
+        a & b & c\\
+        d & e & f
+        \end{bmatrix} +
+        \begin{bmatrix}
+            x & y & z \\
+            q & r & t
+        \end{bmatrix} =
+        \begin{bmatrix}
+            a+x & b+y & c +z \\
+            d+q & e+r & f+t
+        \end{bmatrix}
+\end{equation}
+
+\subsection{Mnozenie (dzieleine)}
+Mozliwe tylko wtedy kiedy $Kolumny (1) = Wiersze(2)$
+\begin{equation}
+    \begin{bmatrix}
+        a & b & c\\
+        d & e & f
+        \end{bmatrix} \times
+        \begin{bmatrix}
+            x & y \\
+            z & q \\
+            r & t
+        \end{bmatrix} =
+        \begin{bmatrix}
+            a*x + b*z + c *r& b+y & c +z \\
+            d+q & e+r & f+t
+        \end{bmatrix}
+\end{equation}
+\subsection{Wyznacznik Macierzy}
+\subsection{Rzad macierzy}
 \end{document}

@@ -1,0 +1,13 @@
+---
+title: "Notatki"
+author: "Mateusz Kojro"
+date: "8/10/2020"
+output: html_document
+---
+## Zadnanie 1: 
+\begin{equation}
+x = 12 
+\end{equation}
+\begin{equation}
+\forevery{a} \frac{a}{bb}
+\end{equation}
