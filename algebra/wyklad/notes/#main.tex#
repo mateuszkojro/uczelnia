@@ -312,6 +312,8 @@ to zbior wszystkich wektorow przestrzeni wektorowej V ortagonalnych do podprzest
 \end{equation}
 \paragraph{Def Rzut wektora na podprzestrzen przetrzedni wektorowej}
 jezeli $V_1$ jest p.p.w przestrzeni Euklidesowej E = (V, <*,*>) i dla kazdego wektora $y \notin V_1$ wektor $y_0 \in V_1$ taki ze wektor $h = y - y_0$ jest ortagonalny do $V_1$ to wektor $y_0$ jest rzutem wektora $y$ na $V_1$
+\clearpage
+\section{Wektory}
 \section{Macierze}
 \subsection{Dodawanie (odejmowanie)}
 \begin{equation}
@@ -331,7 +333,7 @@ jezeli $V_1$ jest p.p.w przestrzeni Euklidesowej E = (V, <*,*>) i dla kazdego we
 
 \subsection{Mnozenie (dzieleine)}
 Mozliwe tylko wtedy kiedy $Kolumny (1) = Wiersze(2)$
-\begin{equation}
+\begin{equation*}
     \begin{bmatrix}
         a & b & c\\
         d & e & f
@@ -342,10 +344,40 @@ Mozliwe tylko wtedy kiedy $Kolumny (1) = Wiersze(2)$
             r & t
         \end{bmatrix} =
         \begin{bmatrix}
-            a*x + b*z + c *r & b+y & c +z \\
-            d+q & e+r & f+t
+            a*x + b*z + c *r & a*y + b * q + c * f  \\
+            d*x + e * z + f *r & d* y + e * q + f*t
         \end{bmatrix}
-\end{equation}
+\end{equation*}
 \subsection{Wyznacznik Macierzy}
+oznaczamy:
+\begin{equation}
+    det A \ \text{lub} \ |A|
+\end{equation}
+obliczamy:
+\begin{itemize}
+    \item $n = 2$
+    \begin{equation}
+    \begin{bmatrix}
+        a_{11} & a_{12} \\
+        a_{21} & a_{22}
+    \end{bmatrix} = a_{11}a_{22} - a_{21}a_{12}
+    \end{equation}
+    \item $n = 3$
+    \begin{equation}
+        \begin{bmatrix}
+            a_{11} & a_{12} & a_{13}\\
+            a_{21} & a_{22} & a_{23} \\
+            a_{31} & a_{32} & a_{33}
+        \end{bmatrix} = a_{11}a_{22}a_{33} + a_{12}a_{23}a_{31} + \\ a_{13}a_{21}a_{32} - a_{11}a_{23}a_{32} - a_{12}a_{21}a_{33} - a_{13}a_{22}a_{31}
+    \end{equation}
+    \item $n>3$ Rozwiniecie Laplacea:
+    \begin{equation}
+      
+    \end{equation}
+\end{itemize}
+Macierz kwadratowa ktorej wyznacznik jest rowny $ 0 $ nazywamy $Osobliwa$
 \subsection{Rzad macierzy}
-\subsection{Koniec}\end{document}
+Rzad macierzy to najwyzszy stopien dla ktorego wyznacznik jest rozny od zera \\
+np jezeli wyznacznik macierzy $4 \times 4$ nie jest rowy $0$ to liczymy wszystkie wyznaczniki podmacierzy $3 \times 3$ poki nie znajdziemy takiego roznego od $0$ jezeli dalej takiego nie bedzie robimy tak samo dla $2 \times 2$ itd.
+\subsection{Rozwiazywanie rownan macierzowych}
+\end{document}

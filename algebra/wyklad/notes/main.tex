@@ -312,6 +312,8 @@ to zbior wszystkich wektorow przestrzeni wektorowej V ortagonalnych do podprzest
 \end{equation}
 \paragraph{Def Rzut wektora na podprzestrzen przetrzedni wektorowej}
 jezeli $V_1$ jest p.p.w przestrzeni Euklidesowej E = (V, <*,*>) i dla kazdego wektora $y \notin V_1$ wektor $y_0 \in V_1$ taki ze wektor $h = y - y_0$ jest ortagonalny do $V_1$ to wektor $y_0$ jest rzutem wektora $y$ na $V_1$
+\clearpage
+\section{Wektory}
 \section{Macierze}
 \subsection{Dodawanie (odejmowanie)}
 \begin{equation}
@@ -352,10 +354,39 @@ oznaczamy:
     det A \ \text{lub} \ |A|
 \end{equation}
 obliczamy:
-\begin{equation}
-    x
-\end{equation}
-Macierz kwadratowa ktorej wyznacznik jest rowny $ 0 $ nazywamy $Osobliwa$
-\subsection{Rzad macierzy}
+\begin{itemize}
+    \item $n = 2$
+    \begin{equation}
+    \begin{bmatrix}
+        a_{11} & a_{12} \\
+        a_{21} & a_{22}
+    \end{bmatrix} = a_{11}a_{22} - a_{21}a_{12}
+    \end{equation}
+    \item $n = 3$
+    \begin{equation}
+        \begin{bmatrix}
+            a_{11} & a_{12} & a_{13}\\
+            a_{21} & a_{22} & a_{23} \\
+            a_{31} & a_{32} & a_{33}
+        \end{bmatrix} = a_{11}a_{22}a_{33} + a_{12}a_{23}a_{31} + \\ a_{13}a_{21}a_{32} - a_{11}a_{23}a_{32} - a_{12}a_{21}a_{33} - a_{13}a_{22}a_{31}
+    \end{equation}
+    \item $n>3$ Rozwiniecie Laplacea:
+    Dla macierzy
+    $A =
+    \begin{bmatrix}
+            a_{11} & a_{12} & a_{13}\\
+            a_{21} & a_{22} & a_{23} \\
+            a_{31} & a_{32} & a_{33}
+    \end{bmatrix} $
+    wybieramy rzad w ktorym najwiecej $(0,1,-1)$
+    \begin{equation}
+        det A = \sum^{n}_{j=1}a_{ij}\times detA_{ij}
+    \end{equation}
+    gdzie $i$ jest wybranym przez nas rzedem i potem liczymy wyznaczniki mniejszych macierzy wynikowych a kazdy z nich mnozymy przez $ a_{ij} * (-1)^{j+j} $
+\end{itemize}
+\paragraph{ Macierz kwadratowa ktorej wyznacznik jest rowny $ 0 $ nazywamy $Osobliwa$
+}\subsection{Rzad macierzy}
+Rzad macierzy to najwyzszy stopien dla ktorego wyznacznik jest rozny od zera \\
+np jezeli wyznacznik macierzy $4 \times 4$ nie jest rowy $0$ to liczymy wszystkie wyznaczniki podmacierzy $3 \times 3$ poki nie znajdziemy takiego roznego od $0$ jezeli dalej takiego nie bedzie robimy tak samo dla $2 \times 2$ itd.
 \subsection{Rozwiazywanie rownan macierzowych}
 \end{document}
