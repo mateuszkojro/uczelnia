@@ -1,0 +1,130 @@
+\documentclass[]{article}
+\usepackage{amsmath}
+\title{Analiza cwiczenia podsumowanie - calki podstawy}
+\author{Mateusz Kojro}
+\begin{document}
+\maketitle
+\section{Calka oznaczona}
+\subsection{Funkcja pierwotna funkcji f nazywamy:}
+\begin{equation}
+  \forall_{x \in (a,b)} F'(x) = f(x)
+\end{equation}
+\subsection{Definicja calki}
+\begin{equation}
+  \int f(x)dx = F(x) + C
+\end{equation}
+\section{Metody obliczania calek}
+\subsection{Calkowanie przez czesci}
+Jezeli funkcje zmiennej $x$: $a(x)$ i $b(x)$ maja pochodne ciagle to:
+\begin{equation}
+  \int{a(x) b'(x) dx} = a(x)b(x) - \int{b(x)a'(x)dx}
+\end{equation}
+lub zapisane inaczej:
+\begin{equation}
+  \int{adb} = ab - \int{bda}
+\end{equation}
+\subsection{Calkowanie przez podstawianie}
+\label{subsec:podstawianie}
+\subsubsection{Def:}
+Jezeli:
+\begin{itemize}
+\item Dla $x \in [a,b]$ funkcja $g(x)$ ma pochodna ciagla
+\item $f(x)$ jest ciagla w zbiorze wartosci $g(x)$
+\end{itemize}
+To mamy:
+\begin{equation}
+  \int{f(g(x)) \times g'(x)dx} = \int{f(u)du}, \ u = g(x)
+\end{equation}
+\subsection{Rozwiazywanie}
+
+\begin{align}
+  \int{sin(4x)} &=
+  \begin{vmatrix}
+    u =4x\\
+    du=4dx\\
+    dx= \frac{du}{4}
+  \end{vmatrix}
+  \text{, bo \ } df=f'(x)\times dx \\
+  \int{\sin{u}\frac{du}{4}} &= \frac{1}{4} \int{\sin{u}du} \\
+  &= \frac{1}{4} \times (-\cos{u})\text{, }u=4x \\
+  &= \frac{1}{4} \times (-\cos{4x}) 
+\end{align}
+
+\section{Calka oznaczona}
+\label{sec:calka oznaczona}
+\subsection{Definicja}
+\label{subsec:Definicja calka oznaczona}
+Jezeli dla $x=[a,b]$ wartosci funkcji $f(x) \ge 0$ to pole $P$ ogarniczone liniami $x = a$ i $x = b$ oraz wykresem $f(x)$ jest rowne calce oznaczonej:
+\begin{equation}
+P = \int_{a}^{b}f(x)dx
+\end{equation}
+i zachodzi:
+\begin{align}
+  \int_{a}^{b}{f(x)dx} &= F(b) - F(a) \\
+  &= F(x) |^b_{a}
+\end{align}
+jezeli natomiast dla $x \in [a,b]$ $f(x) \le 0$:
+\begin{equation}
+  \label{}
+P = -\int_a^b{f(x)dx}
+\end{equation}
+\subsection{Wzory:}
+\par
+Dla calek oznaczonych dzialaja wzory zwiazane z calkami nieoznaczonymi i dodatkowo:
+\par
+Jezeli mamy przedzial calkowania $[a,b]$ mozemy go podzielic na mniejsze przedzialy i policzyc 2 osobne calki po czym je dodac
+\begin{align}
+  [a,b] &= [a,c] + [c,b] \\
+  \int_a^b{f(x)} &= \int_a^c{f(x)} + \int_c^b{f(x)} 
+\end{align}
+\section{Calki f. nieograniczonych}
+Jezeli:
+\begin{itemize}
+\item $f(x)$ jest nieograniczona w przedziale $[a,b]$
+\item jest ograniczona i calkowalna w przedzialach:
+  \begin{align}
+    a &\le x \le c - \alpha \\
+    c + \beta &\le x \le b    
+  \end{align}
+gdzie:
+  \begin{equation}
+    c &\in [a,b] \ \text{, i }\alpha , \beta &> 0
+  \end{equation}
+\end{itemize}
+To mamy:
+ \begin{align}
+    \int_a^bf(x)dx = \lim_{\alpha \to 0} \int_{a}^{c-\alpha}f(x)dx +  \lim_{\beta \to 0} \int_{c+\beta}^{b}f(x)dx 
+  \end{align}
+ \section{Calki oznaczone na przedzialach nieskonczonych}
+ \label{sec:label}
+ Mamy:
+ \begin{equation}
+   \label{}
+   \int_a^{+ \infty}f(x)dx = \lim_{b \to + \infty} \int_{a}^{b}f(x)dx
+
+ \end{equation}
+ analogicznie:
+ \begin{equation}
+ \label{}
+\int_{-\infty}^{+ \infty}f(x)dx = \lim_{b \to + \infty} \lim_{a \to + - \infty} \int_{a}^{b}f(x)dx
+ \end{equation}
+ \clearpage
+\section{Calki funkcji wymiernych}
+Jezeli mamy calke fukcji wymiernej w postaci:
+\begin{equation}
+  \int \frac{W_1}{W_2} = \int \frac{\sum_{i = 0}^n a_i \times x^i}{\sum_{j = 0}^m a_j \times x^j}dx
+\end{equation}
+to jezeli
+\begin{itemize}
+\item $n \ge m$ - dzielimy wielomiany przez siebie i otrzymujemy wielomian i wymierna gdzie $n \le m$
+\item $n \le m$ - rozkladamy na sume ulamkow prostych:
+  \begin{align}
+    \frac{A}{(ax+b)^q} , \frac{Bx+C}{(cx^2+dx+e)^r} \text{ \ gdzie \ }
+    \begin{cases}
+      A,B,C,a,b,c,d,e &\in R \\
+      q,r &\in N
+    \end{cases}
+  \end{align}
+  i $cx^2+dx+e$ nie ma pierwiastkow i $\Delta \le 0$
+\end{itemize}
+\end{document}

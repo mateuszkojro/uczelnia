@@ -1,0 +1,73 @@
+\documentclass[options]{article}
+\author{Mateusz Kojro}
+\usepackage{amsmath}
+\title{Analiza cwiczenia podsumowanie - calki podwojne}
+\begin{document}
+\maketitle
+\section{Definicja:}
+\subsection{Def ogulna}
+\label{subsec:label}
+
+
+Jezeli mamy funkcje 2 zmiennych $f(x,y)$ i: 
+\begin{itemize}
+\item $f$ jest ciagla w $A$
+\item $f$ jest ograniczona w $A$
+\item $A$ jest w dziedzinie $f$
+\end{itemize}
+to calke podwojna oznaczamy:
+\begin{equation}
+  \label{}
+  \int \int_Af(x,y)dxdy
+\end{equation}
+\subsection{Interpretacja geometryczna}
+Jezeli $ \forall_{x,y \in A}$ $f(x,y) > 0 $ to :
+\begin{equation}
+  \label{}
+V = \int \int_{A} f(x,y)dxdy
+\end{equation}
+\clearpage
+\section{Obliczanie:}
+\subsection{Obszar normalny}
+Obszar normalny wzgledem osi $OX$:
+\begin{align}
+  (x,y) =
+  \begin{cases}
+    a &\le x \le b \\
+    g(x) &\le y \le h(x)
+  \end{cases}
+\end{align}
+Obszar normalny wzgledem osi $OY$:
+\begin{align}
+  (x,y) =
+  \begin{cases}
+    c &\le y \le d \\
+    p(y) &\le x \le r(y)
+  \end{cases}
+ \end{align}
+\section{Zamiana calki podwojnej na iterowana}
+Jezeli $A$ jest normalna wzgledem $OX$:
+\begin{equation}
+\int \int_{A} f(x,y)dxdy = \int_a^b \bigg (\int_{y=g(x)}^{y=h(x)}f(x,y)dy \bigg )dx
+\end{equation}
+Jezeli $A$ jest normalna wzgledem $OY$:
+\begin{equation}
+\int \int_{A} f(x,y)dxdy = \int_c^d \bigg (\int_{x=p(y)}^{x=r(y)}f(x,y)dx \bigg )dy
+\end{equation}
+jezeli natomiast obszar calkowania jest dany nierownosciami:
+\begin{equation}
+  \label{}
+a \le x \le b \text{  i  } c \le y \le d
+\end{equation}
+to:
+\begin{align}
+  \label{}
+  \int \int_A f(x,y) dxdy &= \int_c^d \bigg (\int_a^b f(x,y)dx \bigg )dy \\
+  &=  \int_a^b \bigg (\int_c^d f(x,y)dy \bigg )dx
+\end{align}
+
+
+
+
+
+\end{document}

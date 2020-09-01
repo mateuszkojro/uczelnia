@@ -1,0 +1,63 @@
+\documentclass[]{article}
+\usepackage{amsmath}
+
+\title{Analiza cwiczenia podsumowanie}
+\author{Mateusz Kojro}
+\begin{document}
+\maketitle
+\section{Definicja calki}
+\subsection{Funkcja pierwotna funkcji f nazywamy:}
+\begin{equation}
+  \forall_{x \in (a,b)} F'(x) = f(x)
+\end{equation}
+\subsection{Definicja calki}
+\begin{equation}
+  \int f(x)dx = F(x) + C
+\end{equation}
+\section{Metody obliczania calek}
+\subsection{Calkowanie przez czesci}
+Jezeli funkcje zmiennej $x$: $a(x)$ i $b(x)$ maja pochodne ciagle to:
+\begin{equation}
+  \int{a(x) b'(x) dx} = a(x)b(x) - \int{b(x)a'(x)dx}
+\end{equation}
+lub zapisane inaczej:
+\begin{equation}
+  \int{adb} = ab - \int{bda}
+\end{equation}
+\subsection{Calkowanie przez podstawianie}
+\label{subsec:podstawianie}
+\subsubsection{Def:}
+Jezeli:
+\begin{itemize}
+\item Dla $x \in [a,b]$ funkcja $g(x)$ ma pochodna ciagla
+\item $f(x)$ jest ciagla w zbiorze wartosci $g(x)$
+\end{itemize}
+To mamy:
+\begin{equation}
+  \int{f(g(x)) \times g'(x)dx} = \int{f(u)du}, \ u = g(x)
+\end{equation}
+\subsection{Rozwiazanie}
+
+\begin{equation}
+  \Int{sin(4x)} =
+  \begin{cases}
+    u  & = 4x \\
+    du & = 4dx& \\
+    dx & = \frac{du}{4}&
+  \end{cases}
+\end{equation}
+  \begin{equation}
+    \sgn(x) \eq
+    \begin{cases}
+      -1 & \text{if } x < 0 \\
+      0  & \text{if } x = 0 \\
+      1  & \text{if } x > 0
+    \end{cases}
+  \end{equation}
+
+
+
+
+
+
+\end{document}
