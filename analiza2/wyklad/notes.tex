@@ -1,0 +1,198 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, total={6.5in, 9in}]{geometry}
+\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.2}
+
+
+\begin{document}
+\title{Analiza Matematyczna II}
+\maketitle
+\section{Wzór Taylora i wzór Maclaurina}
+    Jeżeli $f(x)$ ma pochodne dowolnego rzędu na $[x, x+h]$, 
+    to istnieje takie $\rho \in (x, x+h)$, $\rho=x+\ominus h$, $0<\ominus<1$ takie, że \par
+       $$f(x+h)=f(x)+\frac{f'(x)}{1!}h + \frac{f''(x)}{2]!}h^2 + ... + \frac{f^{n-1}(x)}{n-1!}x^{n-1}+R_n$$ \\
+    \textbf{Reszta w postaci Lagrange'a} \par $R_n= \frac{f^n(x+\ominus h)h^n}{n!}$ \\
+    \textbf{Wzór Maclaurina}
+    (tu chodzi o przekształcenie, takie że: $x=0, h=x$) \par
+    $$f(x)=f(0)+\frac{f'(0)}{1!}x+\frac{f''(0)}{2!}x+ ... + \frac{f^{n-1}(0)}{n-1!}x^{n-1}+R_n$$ \\
+        \textbf{Reszta w postaci Lagrange'a} \par $$R_n= \frac{f^n(\ominus x)h^n}{n!}x^n$$
+\section{Szereg Taylora i szereg Maclaurina}
+    Załóżmy, że $f(x)$ ma pochodne dowolnego rzędu w otoczeniu punktu $x$ oraz, że $x+h$ należy do tego otoczenia. \\
+     \textbf{Szereg Taylora} \par
+    $f(x+h)=$$\sum_{n=0}^{\infty}$$\frac{f^{(n)}(x)}{n!}h^n $\\
+    \textbf{Szereg Maclaurina}
+    ($x=0, h=x$) \par
+    $f(x)=$$\sum_{n=0}^{\infty}$$\frac{f^{(n)}(0)}{n!}x^n $ \\
+    \textbf{Rozwinięcie funkcji $f(x)$ wokół punktu $x=h$} \par
+    $f(x)=$$\sum_{n=0}^{\infty}$$\frac{f^{(n)}(n)}{n!}(x-h)^n $''
+\section{Funkcje monotoniczne}
+    $f(x)$ \textbf{rosnąca} na $(a, b)$  $\forall_{x,x \in (a,b)} $ $x_1<x_2 => f(x_1)< f(x_2)$ \\
+    $f(x)$ \textbf{malejąca} na $(a, b)$ $\forall_{x,x \in (a,b)} $ $x_1<x_2 => f(x_1)> f(x_2)$ \\
+    $f(x)$ \textbf{nierosnąca} na $(a, b)$  $\forall_{x,x \in (a,b)} $ $x_1<x_2 => f(x_1) \geq f(x_2)$ \\
+    $f(x)$ \textbf{niemalejąca} na $(a, b)$  $\forall_{x,x \in (a,b)} $ $x_1<x_2 => f(x_1) \leq f(x_2)$ \\ \\
+    Jeżeli $f'(x)>0$ na $(a, b)$ to funkcja $f(x)$ jest rosnąca na $(a,b)$ \\
+    Jeżeli $f'(x)<0$ na $(a, b)$ to funkcja $f(x)$ jest malejąca na $(a,b)$ \\ \\
+    Warunkiem koniecznym wystarczającym aby $f(x)$ była niemalejąca jest $f'(x) \geq 0$ na przedziale $(a,b)$\\
+    Warunkiem koniecznym wystarczającym aby $f(x)$ była nierosnąca jest $f'(x) \leq 0$ na przedziale $(a,b)$\\ \\
+\section{Ekstremum lokalne funkcji jednej zmiennej. Warunki konieczne i wystarczające istnienia ekstremum}
+    \textbf{Warunek konieczny istnienia ekstremum lokalnego} \\
+    Jeżeli funkcja f(x) ma w punkcie $f(x)$ ma w punkcie $x_0$ ekstremum lokalne, to albo $f'(x_0)=0$ albo $f'(x_0)$ nie istnieje. \\
+    Punkt $x_0$ jest nazywany punktem krytycznym pierwszego rodzaju. \\
+    Punkt, w którym $f'(x_0)=0$ - punkt stacjonarny.  \\ \\
+    \textbf{Warunki wystarczające istnienia ekstremum lokalnego}\\
+    \textbf{1.} Zmiana znaku pochodnej w otoczeniu punktu, w którym mamy ekstremum. \\
+    \textbf{2.} Znak $f''(x)$ w punkcie stacjonarnym $x_0 (f'(x_0)=0)$ \\ \\
+    W ogólnym przypadku załóżmy, że \par
+    $f'(x_0)=f''(x_0)=...=f^{n-1}(x_0)=0$ oraz $f^{(n)}(x_0) \neq 0$ \\
+    Jeżeli $n$ jest parzyste to w punkcie $x_0$ jest ekstremum lokalne, $f^n(x_0)<0$ - maksimum i $f^n(x_0)>0$ - minimum.
+    Jeżeli $n$ jest nieparzyste, to w punkcie $x_0$ nie ma ekstremum.
+    \section{Funkcje wypukłe i wklęsłe}
+    Funkcja $f(x)$ jest wypukła w punkcie $x_0$, jeżeli dla dowolnego x $\in$ do to otoczenia punktu $x_0$ wykres funkcji  $y=f(x)$ leży nad styczną w punkcie $x_0$ \\
+    Funkcja $f(x)$ jest wklęsła w punkcie $x_0$, jeżeli dla dowolnego x $\in$ do to otoczenia punktu $x_0$ wykres funkcji  $y=f(x)$ leży pod styczną w punkcie $x_0$ \\
+    \textbf{Warunek wypukłości w $f(x)$ w punkcie $x_0$} \par
+    $f(x_0+h)>f(x_0)+f'(x_0)h$ \\
+    \textbf{Warunek wklęsłości w $f(x)$ w punkcie $x_0$} \par
+    $f(x_0+h)<f(x_0)+f'(x_0)h$ \\ \\
+    $f(x)$ wypukła na $(a,b)$, jeżeli $f''(x)>0$ na $(a,b)$\\
+    $f(x)$ wklęsła na $(a,b)$, jeżeli $f''(x)<0$ na $(a,b)$\\
+\section{Całka nieoznaczona. Podstawowe własności całki nieoznaczonej}
+    Funkcję pierwotną funkcji $f(x)$ nazywamy całką nieoznaczoną i oznaczamy symbolem \par
+    $$\int f(x)dx$$ \\
+    Definicja:
+    $$(\int f(x)dx)' = f(x)$$ $$ \int F'(x)dx=F(x) + C $$ \\
+    \textbf{Podstawowe własności całki nieoznaczonej} \\
+    \textbf{1.} Liniowość 
+    $$\int[f(x)+g(x)]dx = \int f(x)dx + \int g(x)dx$$
+    $$\int \lambda f(x)dx = \lambda \int f(x)dx  $$ $\lambda = const$ 
+    $$\int[f(x)-g(x)]dx = \int f(x)dx - g(x)dx$$
+    \textbf{Kres górny zbioru} \\
+    W zbiorze A $\subset$ R, jeżeli istnieje liczba M, taka, że
+    $\forall_{x \in A} x \leq M \wedge \forall_{\epsilon>0} \exists_{x\in A} x > M - \epsilon$ \par
+    $M=supA$ (supremum) \\
+    \textbf{Kres dolny zbioru} \\
+    W zbiorze A $\subset$ R, jeżeli istnieje liczba M, taka, że
+    $\forall_{x \in A} m \leq x \wedge \forall_{\epsilon>0} \exists_{x\in A} x < m+ \epsilon$\par
+    $m=infA$ (infimum)
+\section{Całka Riemanna}
+    Funkcja jest całkowalna w sensie Riemanna w przedziale $(a,b)$ gdy dolna i górna całka Darboux funkcji f w przedziale $(a,b)$ są równe, to znaczy:
+    $$\int_{a-}^b f(x)dx= \int_{a}^{b-} f(x)dx$$
+    Zbiór wszystkich funkcji całkowalnych w sensie Riemanna w $(a,b)$ oznaczamy
+    $$R([a,b])$$
+    Jeśli $f \in R([a,b])$, to wspólną wartość dolnej i górnej całki oznaczamy
+    $$\int_{a}^b f(x)dx$$
+    i nazywamy całką Riemanna funkcji $f$ w przedziale $(a,b)$
+\section{Podstawowe twierdzenie rachunku całkowego}
+    Jeśli $f$ jest całkowalna na $(a,b)$, i $F$ jest ciągła i różniczkowalna na $(a,b)$ i $F'(x) = f(x)$ dla każdego $x \in (a,b)$, to
+    $$\int_{a}^{b} f=F(b)-F(a)$$
+    Dla prostoty istnieje też zapis:
+    $$\int_{a}^{b} f(x)dx=F(x)|_{a}^{b}$$
+    gdzie $F(x)|_{a}^{b}=F(b)-F(a)$
+\section{Podstawowe własności całki oznaczonej}
+    $$\int_{a}^{b}f(x)dx= -\int_{b}^{a}f(x)dx$$
+    $$\int_{a}^{a}f(x)dx = 0$$
+    Twierdzenie o podziale przedziału całkowania
+    $$\int_{a}^{b}f(x)dx=\int_{a}^{c}f(x)dx + \int_{c}^{b}f(x)dx$$
+    $$\int_{a}^{b}f(x)dx= \int_{b}^{a}f(u)du$$
+    Liniowość
+    $$\int_{a}^{b}[f(x)+-g(x)]dx = \int_{a}^{b} f(x)dx +- \int_{a}^{b} g(x)dx$$
+    $$\int_{a}^{b} \lambda f(x)dx = \lambda \int_{a}^{b} f(x)dx  $$
+    Wzór na zamianę zmiennych. Całkowanie przez podstawienie
+    $$\int_{a}^{b}f(y(x))y'(x)dx= \int_{y(a)}^{y(b)}f(u)du$$
+    Wzór na całkowanie przez części
+    $$\int_{a}^{b}f(x)g'(x)dx=f(x)g(x)|_{a}^{b} - \int_{a}^{b}f'(x)g(x)dx$$
+    Różniczkowanie po górnej granicy całkowania
+    $$\int_{a}^{x}f(u)du=f(x)$$
+\section{Nierówności dla całek. Twierdzenie o wartości średniej dla całek}
+    1) Jeżeli funkcjie $f(x)$ i $g(x)$ są całkowalne na $(a,b)$ oraz $f(x) \leq g(x)$ dla dowolnego $x \in (a,b)$ to
+    $$\int_{a}^{b}f(x)dx \leq \int_{a}^{b}g(x)dx$$
+    2) Jeżeli $f(x)$ jest ciągła i $y(x)$ całkowalna na $(a,b)$ oraz $y(x) \geq 0$ dla dowolnego $x \in (a,b)$, to
+    $$ m \int_{a}^{b}y(x)dx \leq \int_{a}^{b}f(x)y(x)dx \leq M\int_{a}^{b}y(x)dx$$
+    $m$ - najmniejsza wartość funkcji na $(a,b)$
+    $M$ - największa wartość funkcji na $(a,b)$
+    Twierdzenie o wartości średniej dla całek
+    Jeżeli $f(x)$ jest ciągła na $(a,b)$ oraz $y(x)$ całkowalna i nieujemna albo niedodatnia na $(a,b)$, to istnieje taki punkt $\varepsilon \in (a,b)$, że
+    $$\int_{a}^{b}y(x)dx=f(\varepsilon)\int_{a}^{b}y(x)dx$$
+\section{Całki niewłaściwe - całki o nieograniczonym przedziale całkowania}
+    Niech będzie dana funkcja $f(x)$ ciągła na $[a, \infty ]$
+    $$\int_{a}^{+ \infty}f(x)dx=lim_{b \rightarrow + \infty} \int_{a}^{b}f(x)dx$$
+    Z uwagi na założoną ciągłość funkcji f(x), całka pod znakiem granicy istnieje.
+    Całkę nazywamy całką niewłaściwą pierwszego rodzaju od $a$ do $\infty$ i jeżeli granica istnieje, to całka jest zbieżna. Jeśli nie - rozbieżna. Podobnie definiujemy
+    $$\int_{-\infty}^{b}f(x)dx=lim_{a \rightarrow - \infty} \int_{a}^{b}f(x)dx$$
+    Całką po całej prostej rzeczywistej definiujemy za pomocą związku
+    $$\int_{-\infty}^{+ \infty}f(x)dx=\int_{-\infty}^{c}f(x)dx + \int_{c}^{+ \infty}f(x)dx$$
+    Kryterium porównawcze zbieżności całek
+    Jeżeli funkcje f(x) i g(x) spełniają nierówności 
+    $|f(x)| \leq g(x)$ dla dowolnego $x \in [a, \infty)$
+    oraz istnieje całka $$\int_{a}^{\infty}g(x)dx$$ to istnieje całka $$\int_{a}^{\infty}f(x)dx$$ i jest ona bezwzględnie zbieżna.
+    Odpowiednik kryterium limesowego dla szeregów:
+    Jeżeli $f(x) \geq 0$ oraz $lim_{x \rightarrow \infty} f(x)x^m=A \neq \infty, A \neq 0$ tzn. $f(x)~\frac{A}{x^m}$, dla $x \rightarrow \infty$, to całka $$\int_{a}^{\infty} f(x)dx$$ jest zbieżna dla $m > 1 $ oraz rozbieżna dla $m \leq 1$
+\section{Całki niewłaściwe - całki z funkcji nieograniczonej}
+    Funkcja f(x) ciągła w przedziale $[a,b)$ oraz nieograniczona gdy $x \rightarrow b$ 
+    $$\int_{a}^{b}f(x)dx=lim_{\varepsilon \rightarrow + 0+} \int_{a}^{b - \varepsilon}f(x)dx$$
+    Z uwagi na ciągłość funkcji f(x) w przedziale $[a, b - \varepsilon]$, całka pod znakiem granicy istnieje.
+    Całkę nazywamy całką niewłaściwą drugiego rodzaju.
+    Jeżeli granica istnieje to całka jest zbieżna, jeśli nie - rozbieżna.
+    Analogicznie w przypadku gdy $f(x)$ jest ciągła w $(a,b]$ i nieograniczona dla $x \rightarrow a$
+    $$\int_{a}^{b}f(x)dx=lim_{\varepsilon \rightarrow 0+} \int_{a-\varepsilon}^{b}f(x)dx$$
+    Wtedy jest ciągła na przedziale całkowania $(a+ \varepsilon, b]$ co oznacza istnienie całki pod znakiem granicy.
+    Może wystąpić sytuacja, kiedy całkujemy po przedziale $[a,b]$ zawierającym punkt $c$, w którym funkcja staje się nieskończona. Zakładamy przy tym, że funkcja $f(x)$ jest ciągła w $[a,c]$ oraz $(c,b)$. Wtedy zdefiniowana jest następująco:
+    $$\int_{a}^{b}f(x)dx=lim_{\varepsilon \rightarrow 0+} \int_{a}^{c - \varepsilon}f(x)dx + lim_{\varepsilon \rightarrow 0+} \int_{c + \varepsilon}^{b}f(x)dx$$
+    Całka jest zbieżna, gdy istnieją obie granice. Jeśli nie - rozbieżna.
+    Kryterium porównawcze
+    $|f(x)| \leq g(x)$ dla dowolnego $x \in [a, b]$
+    oraz całka $$\int_{a}^{b}g(x)dx$$ jest zbieżna, to całka $$\int_{a}^{b}f(x)dx$$ jest bezwzględnie zbieżna.
+    Odpowiednik kryterium limesowego dla szeregów:
+    Jeżeli $f(x) \geq 0$ oraz $lim_{x \rightarrow \infty} f(x)|x-c|^m=A \neq \infty, A \neq 0$ tzn. $f(x)~\frac{A}{|x-c|^m}$, dla $x \rightarrow \infty$, gdzie $c \in [a,b]$ jest punktem, w którym funkcja $f(x)$ staje się funkcją nieograniczoną, wówczas całka $$\int_{a}^{b} f(x)dx$$ jest zbieżna dla $m < 1 $ oraz rozbieżna dla $m \geq 1$
+\section{Zastosowanie całek w geometrii: obliczanie pól i długości krzywych. Kryterium całkowe zbieżności szeregów}
+\section{Zastosowanie całek w geometrii: obliczanie pól oraz objętości brył obrotowych}
+\section{Szeregi Fouriera}
+    Szeregiem Fouriera nazywamy nieskończony szereg funkcyjny w postaci: 
+    $$S(x)=\frac{a_0}{2}+\sum_{n=1}^{\infty}a_ncosnx + b_nsinnx$$ \\
+    Szereg Fouriera pozwala funkcję okresową o okresie $2\pi$  przedstawić za pomocą sumy funkcji trygonometrycznych. 
+    Współczynniki (wzory Eulera-Fouriera) $a_n$ i $b_n$ dla funkcji określonej na przedziale $[-\pi,\pi]$  definiowane są w następujący sposób:
+    $$a_n=\frac{1}{\pi}\int f(x)cosnxdx $$
+    $$a_n=\frac{1}{\pi}\int f(x)sinnxdx $$ \\
+    Każda funkcja $f(x)$ o okresie $2\pi$ przedziałami ciągła wraz ze swoją pochodną, przedziałami monotoniczna i spełniająca w punktach nieciągłości warunek \par
+    $f(x)=\frac{f(x-0)+f(x+0)}{2}$\\
+    daje się rozwinąć w szereg Fouriera.
+\section{Funkcje rzeczywiste wielu zmiennych rzeczywistych. Granica funkcji i ciągłość funkcji wielu zmiennych}
+    Funkcje takie, że $f : R^k \rightarrow R$, przyporządkowują elementowi $(x_1, ..., x_k) \in R^k$ liczbę rzeczywistą $f(x_1, ..., x_k)$ bądź równoważnie (wykorzystując strukturę przestrzeni liniowej $R^k$) wektorowi $x = (x_1, ..., x_k)$ liczbę rzeczywistą $f(x)$.\\
+    Zapis wektorowy umożliwia zwartą postać wielu wzorów.
+    Wartości oznaczamy literą $u$ i piszemy $u = f(x1,…,xk)$, albo  w zapisie wektorowym $u = f(x)$. \\
+    Odpowiednikiem wykresu jest zbiór punktów $R^{k+1}$. Punkty te są parametryzowane przez $k$ zmiennych $x_1, ..., x_k$, co oznacza, że tworzą one k-wymiarowy podzbiór (tzw. Hiperpowierzchnię) przestrzeni $R^{k+1}$
+    \textbf{Granica funkcji wielu zmiennych}\\
+
+\section{Pochodna kierunkowa. Pochodna cząstkowa. Gradient}
+    \textbf{Pochodna kierunkowa}
+    Niech $f:R^k \rightarrow R$ Pochodną kierunkową funkcji $f$ w punkcie $x$, w kierunku
+    wektora $v$, nazywamy granicę
+    $$f'_v(x)=lim_{\varepsilon \rightarrow 0}\frac{f(x+\varepsilon v)-f(x)}{\varepsilon}$$
+    Pochodna kierunkowa określa tempo zmian wartości funkcji $f(x)$ w kierunku wektora $v$ w danych punkcie $x$.\\
+    Szczególnym przypadkiem pochodnej kierunkowej są \textbf{pochodne cząstkowe} funkcji $f(x)$ po zmiennych $x_i$:
+    $$\frac{\partial f(x)}{\partial x_i}:=f'_{ei}(x)= lim_{e\rightarrow 0}\frac{f(x+\varepsilon e_i)-f(x)}{\varepsilon}, i=1,...k$$
+    Gdzie ei, i = 1, …, k, są wektorami bazy kanonicznej Rk. Pochodne cząstkowe są po prostu pochodnymi kierunkowymi w kierunku wektorów bazy kanonicznej. Określają one tempo zmian wartości funkcji w kierunku wektorów bazy kanonicznej. \\
+    Wektor postaci $\frac{\partial f(x)}{\partial x}=({\frac{\partial f(x)}{\partial x_1}},\frac{\partial f(x)}{\partial x_2},...,\frac{\partial f(x)}{\partial x_k})$ nazywamy \textbf{gradientem} funkcji $f(x)$ w punkcie x.  
+\section{Różniczkowalność funkcji wielu zmiennych}
+    Funkcja jest różniczkowlana w punkcie x, jeżeli istnieje gradient $\frac{\partial f(x)}{\partial x}$ oraz $$lim_{v \rightarrow 0}\frac{f(x+v)-f(x)-\frac{\partial f(x)}{\partial x}*v}{|v|}=0$$
+    gdzie 0 pod znakiem granicy oznacza wektor zerowy. W tym przypadku formę liniową  $$df(x)v=\frac{\partial f(x)}{\partial x}*v$$ nazywamy różniczką zupełną funkcji $f$ w punkcie $x$ ze względu na przyrost argumentu $v$.\\
+    Jeżeli pochodne cząstowe $\frac{\partial f(x)}{\partial x_i}, i=1,...,k$, istnieją w pewnym otoczeniu punktu $x$ i są ciągłe w punkcie $x$, to funkcja $f$ jest różniczkowalna w punkcie x. Jeżeli funkcja $f$ jest różniczowalna w punkcie $x$, to jest w tym punkcie ciągła.
+\section{Różniczka zupełna funkcji wielu zmiennych. Zastosowanie różniczki zupełnej w rachunkach przybliżonych}
+    
+\section{Pochodne cząstowe funkcji złożonej}
+
+\section{Pochodne cząstkowe wyższych rzędów}
+
+\section{Różniczki wyższych rzędów funkcji wielu zmiennych. Wzór Taylora. Wzór Maclaurina}
+
+\section{Ekstremum lokalne funkcji wielu zmiennych. Warunki konieczne i wystarczające istnienia ekstremum lokalnego funkcji wielu zmiennych}
+
+\section{Ekstremum warunkowe. Warunki konieczne i wystarczające istnienia ekstremum warunkowego}
+
+\section{Całka podwójna po prostokącie. Całki iterowane}
+
+
+\end{document}
